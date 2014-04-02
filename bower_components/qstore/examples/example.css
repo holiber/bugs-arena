@@ -1,0 +1,20 @@
+body,html {margin:0;padding: 0;color: #555;}
+body {font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif}
+h1 {padding: 10px;margin: 0;border-bottom: 1px solid #ccc;background-color: #eee;}
+.left-bar {float:left;padding: 10px}
+select[name="queries"] {width: 190px}
+.query-place {position: relative;height: 180px}
+.code {display:none;position: relative ;margin-left: 200px; padding: 10px}
+
+.table {border-collapse: collapse;margin-top: 10px;}
+.table td, .table th {padding: 5px 10px 5px 10px;border: 1px solid #ddd;}
+
+.table th {background: #eee}
+.table img {max-width: 50px; max-height: 50px}
+
+.block {background-color: #99FFFF;border: 1px solid #33CCCC;padding: 10px;border-radius: 5px;margin-bottom: 10px}
+.block.sql-block {background-color: #CCCCFF; border-color: #6666CC}
+.block:last-child {margin-bottom: 0}
+label {font-size: 0.8em;color: gray; font-weight: bold}
+.block p {margin: 10px;font-family: monospace;font-style: italic}
+.result {margin-left: 200px;padding: 0 10px 10px 10px}

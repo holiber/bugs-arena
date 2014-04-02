@@ -1,0 +1,19 @@
+{
+  "name": "qstore",
+  "version": "0.7.9",
+  "ignore": [
+    "**/.*"
+  ],
+  "dependencies": {},
+  "homepage": "https://github.com/holiber/qstore",
+  "_release": "0.7.9",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.7.9",
+    "commit": "ecc8d5f5509b8e1aa021d3a237eed8680258749c"
+  },
+  "_source": "git://github.com/holiber/qstore.git",
+  "_target": "~0.7.9",
+  "_originalSource": "qstore",
+  "_direct": true
+}

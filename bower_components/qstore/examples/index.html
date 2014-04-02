@@ -1,0 +1,187 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>ActiveData find</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="example.css">
+	<script src="../jquery.js"></script>
+	<script src="../data.js"></script>
+	<script src="table-template.js"></script>
+	<script src="example.js"></script>
+</head>
+<body>
+<h1> Qstore "find" usage</h1>
+<div class="left-bar">
+	<label>Choose example:</label><br/>
+	<select name="queries">
+		<option value="all">All</option>
+		<option value="apples">Apples</option>
+		<option value="greenApples">Green apples</option>
+		<option value="applesAndPears">Apples and pears</option>
+		<option value="redImages">Images of red fruits</option>
+		<option value="heavyFruits">Heavy fruits</option>
+		<option value="cheapOrYellow">Cheap or yellow fruits</option>
+		<option value="expensiveIntfruits">Expensive fruits with integer price</option>
+		<option value="regExp">Using regular expressions</option>
+	</select>
+</div>
+
+
+<!-- EXAMPLES -->
+
+<div class="code" id="all" style="display: block">
+	<div class="block expr-block">
+		<label>Expression:</label>
+		<p>
+			fruits.find(true);
+		</p>
+	</div>
+	<div class="block sql-block">
+		<label>SQL analog:</label>
+		<p>
+			select * from fruits;
+		</p>
+	</div>
+</div>
+
+<div class="code" id="apples">
+	<div class="block expr-block">
+		<label>Expression:</label>
+		<p>
+			fruits.find({type: 'apple'});
+		</p>
+	</div>
+	<div class="block sql-block">
+		<label>SQL analog:</label>
+		<p>
+			select * from fruits where type = 'apple';
+		</p>
+	</div>
+</div>
+
+<div class="code" id="greenApples">
+	<div class="block expr-block">
+		<label>Expression:</label>
+		<p>
+			fruits.find({type: 'apple', color: 'green'});
+		</p>
+	</div>
+	<div class="block sql-block">
+		<label>SQL analog:</label>
+		<p>
+			select * from fruits where type = 'apple' and color = 'red';
+		</p>
+	</div>
+</div>
+
+<div class="code" id="applesAndPears">
+	<div class="block expr-block">
+		<label>Expression:</label>
+		<p>
+			fruits.find({type: ['apple', 'pear']});
+		</p>
+	</div>
+	<div class="block sql-block">
+		<label>SQL analog:</label>
+		<p>
+			--variant 1<br/>
+			select * from fruits where type = 'apple' or type = 'pear';<br/><br/>
+			--variant 2<br/>
+			select * from fruits where type in ('apple', 'pear')
+		</p>
+	</div>
+</div>
+
+<div class="code" id="redImages">
+	<div class="block expr-block">
+		<label>Expression:</label>
+		<p>
+			fruits.find({color: 'red'}, ['image']);
+		</p>
+	</div>
+	<div class="block sql-block">
+		<label>SQL analog:</label>
+		<p>
+			select image from fruits where color = 'red';
+		</p>
+	</div>
+</div>
+
+<div class="code" id="heavyFruits">
+	<div class="block expr-block">
+		<label>Expression:</label>
+		<p>
+			fruits.find({weight: {$gte: 1}}, ['image', 'weight', 'type']);
+		</p>
+	</div>
+	<div class="block sql-block">
+		<label>SQL analog:</label>
+		<p>
+			select image, weight, type from fruits where weight >= 1;
+		</p>
+	</div>
+</div>
+
+<div class="code" id="cheapOrYellow">
+	<div class="block expr-block">
+		<label>Expression:</label>
+		<p>
+			fruits.find([{price: {$lt: 1}}, {color: 'yellow'}]);
+		</p>
+	</div>
+	<div class="block sql-block">
+		<label>SQL analog:</label>
+		<p>
+			select * from fruits where price < 1 or color = 'yellow'
+		</p>
+	</div>
+</div>
+
+<div class="code" id="expensiveIntfruits">
+	<div class="block expr-block">
+		<label>Expression:</label>
+		<p>
+			//variant 1<br/>
+			fruits.find({price: {$and: [{$gte: 1}, function (value) {return value % 1 == 0}] }})<br/><br/>
+			//variant 2<br/>
+			fruits.find({$and: [{price: {$gte: 1}}, function (row) {return row.price % 1 == 0}] })<br/><br/>
+			//variant 3<br/>
+			fruits.find({$and: [{price: {$gte: 1}}, {price: function (value) {return value % 1 == 0}} ] })<br/><br/>
+			//variant 4<br/>
+			fruits.find(function (row) { return row.price >= 1 && row.price % 1 == 0})<br/><br/>
+			//variant 5<br/>
+			ActiveData.addOperator('isInt', function (left, right) { var isInt = (left % 1 == 0); return right ? isInt : !isInt})<br>
+			fruits.find({price: {$gte: 1, $isInt: true}})<br/>
+		</p>
+	</div>
+	<div class="block sql-block">
+		<label>SQL analog:</label>
+		<p>
+			select * from fruits where price >= 1 and (price % 1 = 0)
+		</p>
+	</div>
+</div>
+
+<div class="code" id="regExp">
+	<div class="block expr-block">
+		<label>Expression:</label>
+		<p>
+			fruits.find({type: /apple/});
+		</p>
+	</div>
+</div>
+
+<div class="result">
+	<label>Result:</label>
+	<div class="table-place"></div>
+</div>
+
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
+
+
+</body>
+</html>

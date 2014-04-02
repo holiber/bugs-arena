@@ -1,0 +1,413 @@
+/* GUI */
+body, html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+h2 {
+	margin: 10px;
+	text-align: center;
+}
+
+
+.p {
+	padding: 10px;
+	font-size: 0.9em;
+}
+
+.center {
+	text-align: center;
+}
+
+.blue {color: #1e90ff}
+.red {color: red}
+.green {color: green}
+.purple {color: #9932cc}
+.white {color: wheat}
+
+.btn, input{
+	display: block;
+	border: 1px solid orangered;
+	padding: 5px;
+	margin: 10px;
+	cursor: default;
+	text-align: center;
+	height: 20px;
+}
+
+input {
+	display: block;
+	background-color: rgba(0,0,0,0.5);
+	color: orange;
+	margin: 0;
+	margin-bottom: 10px;
+	height: 20px;
+	width: 200px;
+	text-align: left;
+}
+
+.dlg input {
+	width: 250px;
+	text-align: center;
+}
+
+.btn:hover {
+	border-color: orange;
+	color: yellow;
+}
+
+.btn:active {
+	border: 1px solid orangered;
+	box-shadow: 0 0 10px black inset;
+}
+
+.app-container {
+	width: 100%;
+	height: 100%;
+	background-color: #522009;
+	background-image: url("../img/back2.png");
+	color: orange;
+	font-family: Arial;
+	-webkit-user-select: none;
+}
+
+.game {
+	position: absolute;
+	top: 40px;
+	left: 50%;
+	margin-left: -400px;
+	width: 800px;
+	height: 500px;
+	background: url(../img/background.jpg);
+	box-shadow: 0px 0px 40px black;
+	border-radius: 5px;
+}
+
+.panel {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 260px;
+	right: 0;
+	background-color: rgba(0,0,0,0.7);
+}
+
+.screen {
+	margin: 10px;
+	background-color: rgba(0,0,0,0.5);
+	padding: 5px;
+}
+
+.screen .label {
+	border-bottom: 1px solid orange;
+	padding: 2px 5px;
+	margin-bottom: 5px;
+}
+
+.players {
+	height: 270px;
+}
+
+.players .player {
+	font-size: 0.8em;
+	height: 60px;
+	overflow: hidden;
+}
+
+.players .unit {
+	display: inline-block;
+	font-size: 0.7em;
+	border: 1px solid orangered;
+	padding: 2px;
+	text-align: right;
+	margin: 2px;
+	width: 40px;
+	height: 30px;
+}
+
+.players .unit .hp{color:green}
+.players .unit .dm{color:red}
+
+.messages {height: 100px}
+.messages .list {
+	font-size: 0.7em;
+	overflow: hidden;
+	position: absolute;
+	height: 70px;
+}
+.message-input {
+	position: relative;
+	margin: 0 10px 0 10px;
+
+}
+.message-input input{
+	position: absolute;
+	width: 180px;
+}
+.message-input .btn{
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 0;
+}
+
+.arena {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 540px;
+}
+
+.dlg {
+	display: none;
+	position: absolute;
+	background-color: rgba(0,0,0,0.7);
+	top: 100px;
+	left: -400px;
+	padding: 20px;
+	min-width: 260px;
+	z-index: 300;
+}
+
+.dlg .btn {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.dlg .title {
+	margin-bottom: 10px;
+}
+
+.dlg.wait-room {
+	left: -475px;
+	min-width: 375px;
+}
+
+.dlg.help {
+	left: -500px;
+	width: 400px;
+}
+
+.dlg.help .go {
+	display: block;
+	position: static;
+}
+
+.table {
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	font-size: 0.9em;
+}
+
+.table th, .table td {
+	text-align: left;
+	padding: 2px 5px;
+}
+
+.table th {
+	border-bottom: 1px solid orange;
+}
+
+.when-game {display: none}
+.connected .when-game {display: block}
+.connected .when-menu {display: none}
+
+
+/* ------------ GAME RESOURCES ---------------*/
+.go {
+	position: absolute;
+	display: none;
+}
+
+/* BUG */
+.go-bug, .go-bug .sprite{
+	width: 10px;
+	height: 12px;
+	z-index: 100;
+}
+
+.go-bug .sprite{
+	background: url('../img/bug.png') no-repeat;
+}
+
+.go-bug.frame-1 .sprite{
+	background-position: -11px 0;
+}
+
+.go-bug.level-2 .sprite {
+	background: url('../img/bug-big.png') no-repeat;
+}
+
+.go-bug.level-2, .go-bug.level-2 .sprite{
+	width: 20px;
+	height: 24px;
+}
+
+.go-bug.level-2.frame-1 .sprite {
+	background-position: -22px 0;
+}
+
+.go-bug .rank {
+	width: 2px;
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	margin-left: -1px;
+}
+
+.go-bug .rank.health {
+	background-color: green;
+}
+
+.go-bug .rank.damage {
+	background-color: red;
+}
+
+.go-bug .hp-bar {
+	width: 100%;
+	height: 3px;
+	background-color: black;
+	position: absolute;
+}
+
+.go-bug .hp-bar .value {
+	width: 100%;
+	height: 100%;
+	background-color: green;
+}
+
+.go-bonus {
+	width: 20px;
+	height: 20px;
+	background-size: 100%;
+}
+
+.bonus-apple {
+	background-image: url('../img/apple.png');
+}
+
+.bonus-cake {
+	background-image: url('../img/cake.png');
+}
+
+.bonus-pepper {
+	background-image: url('../img/pepper.png');
+}
+
+.bonus-acorn {
+	background-image: url('../img/acorn.png');
+}
+
+.bonus-amanita {
+	background-image: url('../img/amanita.png');
+}
+
+.go-sprite {
+	position: absolute;
+}
+
+.go-block, .spr-block {
+	background-image: url('../img/brick.png');
+	width: 20px;
+	height: 20px;
+}
+
+.go-block {
+	box-shadow: 0 0 10px black;
+}
+
+.go-block.frame-1 {
+	background-position: -20px 0;
+}
+
+.go-block.frame-2 {
+	background-position: -40px 0;
+}
+
+.go-block.frame-3 {
+	background-position: -60px 0;
+}
+
+.spr-block {
+	background-position: -80px 0;
+}
+
+.go-fx-text {
+	font-weight: bold;
+	z-index: 200;
+}
+
+.spr-bug-crashed {
+	background: url('../img/bug-crashed.png') no-repeat;
+	width: 15px;
+	height: 14px;
+}
+
+.spr-blood {
+	background: url('../img/blood.png') no-repeat;
+	width: 20px;
+	height: 20px;
+}
+
+.spr-acorn {
+	background: url('../img/acorn.png') no-repeat;
+	width: 20px;
+	height: 20px;
+}
+
+.spr-poison {
+	background: url('../img/poison.png') no-repeat;
+	width: 20px;
+	height: 20px;
+	background-size: 100%;
+}
+
+.spr-steam {
+	background: url('../img/steam.png') no-repeat;
+	width: 20px;
+	height: 20px;
+	background-size: 100%;
+}
+
+.spr-splinters {
+	background: url('../img/splinters.png') no-repeat;
+	width: 20px;
+	height: 20px;
+	background-size: 100%;
+}
+
+.go-target {
+	position: absolute;
+	width: 3px;
+	height: 3px;
+	border-radius: 5px;
+}
+
+.go-target-blue {
+	background-color: blue;
+	box-shadow: 0 0 10px 3px blue;
+}
+
+.go-target-red {
+	background-color: red;
+	box-shadow: 0 0 10px 3px red;
+}
+
+.go-target-green {
+	background-color: green;
+	box-shadow: 0 0 10px 3px green;
+}
+
+.go-target-purple {
+	background-color: green;
+	box-shadow: 0 0 10px 3px green;
+}
+
+.spr-click {
+	width: 15px;
+	height: 15px;
+	border: 2px solid blue;
+	border-radius: 15px;
+}

@@ -1,0 +1,135 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Bugs arena</title>
+	<meta name="description" content="Bugs arena">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="bower_components/qstore/qstore.js"></script>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
+	<script src="bower_components/socket.io-client/dist/socket.io.min.js"></script>
+	<script src="js/class.js"></script>
+	<script src="js/game.js"></script>
+	<script src="js/player.js"></script>
+	<script src="js/panel.js"></script>
+	<script src="js/math.js"></script>
+	<script src="js/fxText.js"></script>
+	<script src="js/sprite.js"></script>
+	<script src="js/blood.js"></script>
+	<script src="js/bonus.js"></script>
+	<script src="js/block.js"></script>
+	<script src="js/bug.js"></script>
+	<script src="js/target.js"></script>
+	<script src="js/bullet.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/map.js"></script>
+	<script src="js/maps/fourSectors.js"></script>
+
+</head>
+<body>
+<div class="app-container">
+	<div class="game">
+		<div class="arena"></div>
+		<div class="panel">
+			<h2>Bugs arena</h2>
+
+			<div class="btn join when-menu">Join game</div>
+			<div class="btn help when-menu">Help</div>
+
+			<div class="players screen when-game">
+				<div class="label">Players</div>
+				<div class="list"></div>
+			</div>
+
+			<div class="messages screen when-game">
+				<div class="label">Messages</div>
+				<div class="list">
+				</div>
+			</div>
+
+			<div class="message-input when-game">
+				<input name="message" placeholder="message here"/>
+				<div class="btn send">Send</div>
+			</div>
+
+			<div class="dlg connection">
+				<div class="form">
+					Your name:
+					<input name="name" value=""/>
+					Server:
+					<input name="address" value=""/>
+					<div class="btn connect">Connect</div>
+				</div>
+				<div class="connecting">
+					Connecting...
+				</div>
+				<div class="error">
+					Unable to connect to server.
+					<div class="btn close">Close</div>
+				</div>
+			</div>
+
+
+			<div class="dlg wait-room">
+				<div class="title"></div>
+				<table class="table connected-players">
+					<thead>
+						<th>Player</th><th>Team</th><th>State</th>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+				<div class="btn ready"> </div>
+				<div class="btn disconnect">Disconnect</div>
+			</div>
+
+			<div class="dlg results">
+				<div class="title"></div>
+				<table class="table">
+					<thead>
+					<th>Player</th><th>Kills</th><th>Bugs</th><th>Items</th>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+				<div class="btn reset">Close</div>
+			</div>
+
+			<div class="dlg help">
+				<div class="title">Bugs arena help</div>
+				<table class="table">
+					<tbody>
+						<tr>
+							<td><div class=" go-bonus bonus-apple"></div></td>
+							<td>Restore 50 health points (hp). If hp is full then it gives your additional 15 points to max health points</td>
+						</tr>
+						<tr>
+							<td><div class=" go-bonus bonus-pepper"></div></td>
+							<td>Increase attack by 5 damage points (dm)</td>
+						</tr>
+						<tr>
+							<td><div class=" go-bonus bonus-cake"></div></td>
+							<td>Gives 5 experience points (xp). Collect 15 xp to spawn bug</td>
+						</tr>
+						<tr>
+							<td><div class=" go-bonus bonus-acorn"></div></td>
+							<td>Acorn strikes on the enemy with 3x damage. Also gives 2xp</td>
+						</tr>
+						<tr>
+							<td><div class=" go-bonus bonus-amanita"></div></td>
+							<td>Allows to make poison shot with 1/2 damage. Also gives 1xp</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="btn close">Close</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+</body>
+</html>
