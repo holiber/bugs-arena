@@ -1,3 +1,5 @@
 {
-	"socket.io": "0.9.16"
+	"dependencies": {
+		"socket.io": "0.9.16"
+	}
 }
