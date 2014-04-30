@@ -1,6 +1,6 @@
 !function () {
 
-	var LOBBY_SERVER = 'http://localhost:8095';
+	var LOBBY_SERVER = 'http://bugsarena.alexclimber.com:8095';
 	var MAX_MESSAGES = 6;
 
 	var Panel = Game.Panel = Class.extend({
