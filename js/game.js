@@ -2,7 +2,7 @@
 
 	var PROTOCOL_VERSION = 1;
 	var TICK_DELAY = 25;
-	var DEFAULT_MAP = 'FourSectors';
+	var DEFAULT_MAP = 'Hello';
 	var MAX_AGE_DIFF = 10;
 	var SKIP_AGE_DIFF = 30;
 
@@ -18,6 +18,7 @@
 			this.collidingObjects = {}; // all colliding objects from gameObjects
 			this.age = 0;
 			this.serverAge = null;
+			this.serverMap = null;
 			this.map = null;
 			this.players = {};
 			this.player = null;
@@ -35,7 +36,13 @@
 
 		start: function () {
 			this.age = this.serverAge;
-			this.map = new Game.maps[DEFAULT_MAP](this);
+			var Map =  Game.maps[this.serverMap];
+			if (!Map) {
+				alert('map "' + this.serverMap + '" not found!');
+				this.disconnect();
+				return;
+			}
+			this.map = new Map(this);
 			this.map.build();
 			setTimeout(this.loop.bind(this), TICK_DELAY);
 			this.gameIsRuning = true;
@@ -127,7 +134,7 @@
 
 		connect: function (address, name) {
 			address = 'http://' + address;
-			this.socket = io.connect(address, {'force new connection': true});
+			this.socket = io.connect(address, {'force new connection': true, timeout: 1000});
 			this.socket.on('connect', function () {
 				console.log('connected');
 				this.send('hello', {name: name, protocol: PROTOCOL_VERSION});
@@ -175,6 +182,7 @@
 			var id = data.id;
 			this.age = data.age;
 			this.rGen = new Game.ParkMillerGenerator(data.randomizer);
+			this.serverMap = data.map;
 
 			for (var key in data.players) {
 				var player = data.players[key];
@@ -196,7 +204,8 @@
 		},
 
 		_onNewPlayer: function (data) {
-			this.createPlayer(data);
+			var player = this.createPlayer(data);
+			this.msg('player ' + player.name + ' connected');
 			this.panel.render();
 		},
 
@@ -245,6 +254,7 @@
 
 		_onPlayerDisconnected: function (playerId) {
 			var player = this.players[playerId];
+			if (!player) return;
 			player.disconnect();
 			if (!this.gameIsRuning && !this.gameIsOver) delete this.players[playerId];
 		},

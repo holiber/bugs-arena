@@ -1,11 +1,19 @@
 var io = require('socket.io');
+var request = require('request');
 
-var PORT = 8089;
+var DEFAULT_PORT = 8089;
+var DEFAULT_NAME = 'bugs arena server';
+var DEFAULT_MAP = 'random';
+var LOBBY_SERVER = 'alexclimber.com:8095';
 var PROTOCOL_VERSION = 1;
 var MAX_CLIENTS = 4;
-var TICK_DELAY = 25;
-var SEND_DELAY = 5;
-var START_GAME_DELAY = 50;
+var TICK_DELAY = 25; //ms
+var SEND_DELAY = 5; //frames
+var START_GAME_DELAY = 50; //frames
+var LOBBY_SYNC_DELAY = 200; //frames
+var MAPS = ['FourSectors', 'Dogfight'];
+var Entities = require('html-entities').AllHtmlEntities;
+var entities = new Entities();
 var log = console.log;
 
 var utils = {
@@ -13,6 +21,21 @@ var utils = {
 		var i = 0;
 		for (var key in obj) i++;
 		return i;
+	},
+	getRandomElement: function (arr) {
+		if (!arr || !arr.length) return;
+		return arr[ Math.floor( Math.random() * arr.length )];
+	},
+
+	parseArgv: function (argv) {
+		var result = {};
+		for (var i = 0; i < argv.length; i++) {
+			var arg = argv[i].split('=');
+			var name = arg[0];
+			var val = arg[1];
+			result[name] = val;
+		}
+		return result;
 	}
 }
 
@@ -33,11 +56,11 @@ Client.prototype = {
 	}
 }
 
-var GameServer = function () {this.init();}
+var GameServer = function () {this.init.apply(this, arguments);}
 
 GameServer.prototype = {
 
-	init: function () {
+	init: function (name, port, map) {
 		this.clients = {};
 		this.players = {
 			blue: null,
@@ -56,17 +79,24 @@ GameServer.prototype = {
 		this.clientsCnt = 0;
 		this.startAge = 0;
 		this.loopIntervalId = null;
+		this.port = Number(this.port || port || DEFAULT_PORT);
+		this.name = this.name || name || DEFAULT_NAME;
+		this.serverMap = this.serverMap || map || DEFAULT_MAP;
+		this.map = null;
 	},
 
 	start: function () {
 		if (!this.io) {
-			this.io = io.listen(PORT);
+			this.io = io.listen(this.port);
 			this.io.sockets.on('connection', this._onConnection.bind(this));
-			log('server started on port ' + PORT);
+			log('server started on port ' + this.port);
 		}
+		this.map = this.serverMap;
+		if (this.map == 'random') this.map = utils.getRandomElement(MAPS);
 		this.randomizer = Math.round(Math.random() * 10000000);
 		this.loopIntervalId = setInterval(this.loop.bind(this), TICK_DELAY);
 		log('server ready');
+		this.syncWithLobby();
 	},
 
 	restart: function () {
@@ -83,9 +113,13 @@ GameServer.prototype = {
 		}
 
 		var clientsCnt = utils.length(this.clients);
-		if (clientsCnt) this.age++;
-		if (this.age && !(this.age % SEND_DELAY)) {
+		this.age++;
+		if (clientsCnt && this.age && !(this.age % SEND_DELAY)) {
 			this.sendState();
+		}
+
+		if (!this.gameIsRunning && !(this.age % LOBBY_SYNC_DELAY)) {
+			this.syncWithLobby();
 		}
 	},
 
@@ -191,6 +225,23 @@ GameServer.prototype = {
 		if (!this.clientsCnt && this.gameIsRunning) this.gameOver();
 	},
 
+	syncWithLobby: function () {
+		log('sync with lobby server..');
+		request.post('http://' + LOBBY_SERVER, {form: {
+			name: this.name,
+			port: this.port,
+			protocol: PROTOCOL_VERSION,
+			playersCnt: this.clientsCnt,
+			map: this.map
+		}}, function (error, response, body) {
+			if (error) {
+				log('warning! sync with lobby server failed');
+				return;
+			}
+			log('lobby server response:', body);
+		})
+	},
+
 	_onConnection: function (socket) {
 		var disconnectMsg = '';
 		if (this.clientsCnt == MAX_CLIENTS) disconnectMsg = 'server is full';
@@ -204,6 +255,7 @@ GameServer.prototype = {
 		var id = ++this.lastId;
 		var client = new Client(id, socket);
 		this.clients[id] = client;
+		if (this.clientsCnt) this.age = 0;
 		this.clientsCnt++;
 		socket.on('message', function (data) {
 			this._onMessage(client, data);
@@ -218,6 +270,13 @@ GameServer.prototype = {
 			this.disconnectClient(client.id);
 			return;
 		}
+
+		// encode data
+		for (var key in data.data) {
+			var item = data.data[key];
+			if (typeof item == 'string') data.data[key] = entities.encode(item);
+		}
+
 		switch (data.msg) {
 			case 'hello': this._onHello(client, data.data);break
 			case 'target': this._onTarget(client, data.data);break;
@@ -255,7 +314,7 @@ GameServer.prototype = {
 	},
 
 	_onHello: function (client, data) {
-		client.name = data.name;
+		client.name = data.name
 		if (data.protocol != PROTOCOL_VERSION) {
 			client.send('disconnect', 'Wrong protocol. Server version - ' + PROTOCOL_VERSION + ', client version - ' + data.protocol);
 			this.disconnectClient(client.id);
@@ -273,6 +332,7 @@ GameServer.prototype = {
 			client.team = currentTeam;
 			this.players[currentTeam] = client;
 		}
+
 		var players = {};
 		for (var team in this.players) {
 			var player = this.players[team];
@@ -290,7 +350,8 @@ GameServer.prototype = {
 			team: currentTeam,
 			players: players,
 			age: this.age,
-			randomizer: this.randomizer
+			randomizer: this.randomizer,
+			map: this.map
 		});
 
 		for (var clientId in this.clients) {
@@ -301,7 +362,7 @@ GameServer.prototype = {
 				team: client.team,
 				age: this.age,
 				isReady: client.isReady
-			})
+			});
 		}
 	},
 
@@ -310,5 +371,6 @@ GameServer.prototype = {
 	}
 }
 
-var server = new GameServer();
+var argv = utils.parseArgv(process.argv);
+var server = new GameServer(argv.name, argv.port, argv.map);
 server.start();

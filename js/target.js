@@ -43,7 +43,14 @@
 			}
 
 			var unit = player.units[nearestUnit.id];
-			unit && unit.setTarget(this);
+			if (unit) {
+				unit && unit.setTarget(this);
+				if (this.team == this.game.player.team) this.game.create('FxLine', {
+					color: this.team,
+					target1: this,
+					target2: unit
+				});
+			}
 		},
 
 		step: function () {

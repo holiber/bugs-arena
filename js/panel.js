@@ -1,4 +1,6 @@
 !function () {
+
+	var LOBBY_SERVER = 'http://localhost:8095';
 	var MAX_MESSAGES = 6;
 
 	var Panel = Game.Panel = Class.extend({
@@ -11,6 +13,7 @@
 			this.$el = this.game.$el.find('.panel')
 			this.$playersList = this.$el.find('.players .list');
 			this.$messages = this.$el.find('.messages .list');
+			this.servers = new Qstore();
 			this._attachEvents();
 			this.closeDialog();
 			this.render();
@@ -19,6 +22,34 @@
 		reset: function () {
 			this.$messages.empty();
 			this.$playersList.empty();
+		},
+
+		getServers: function () {
+			var $dlg = this.$el.find('.dlg.games');
+			$dlg.find('.load-state').hide();
+			$dlg.find('.loading').show();
+			var $tbody = $dlg.find('tbody').empty();
+			var req = $.getJSON(LOBBY_SERVER + '?callback=?');
+			var onFail = function () {
+				$dlg.find('.load-state').hide();
+				$dlg.find('.error').show();
+			}
+
+			req.done(function (servers) {
+				this.servers = new Qstore(servers);
+
+				if (!this.servers.rows.length) {
+					onFail();
+					return;
+				}
+
+				this.servers.each(function (server) {
+					$tbody.append('<tr rel="' + server.id + '"><td>' + server.name + '</td><td>' + server.id + '</td><td>' + server.playersCnt + '</td><td>' + server.map + '</td><td>' + server.protocol + '</td></tr>');
+				});
+				$dlg.find('.load-state').hide();
+				$dlg.find('.done').show();
+			});
+			req.fail(onFail)
 		},
 
 		render: function () {
@@ -143,6 +174,8 @@
 			this.$el.on('click', '.btn.close', this.closeDialog.bind(this));
 			this.$el.on('click', '.btn.reset', this._onResetClick.bind(this));
 			this.$el.on('click', '.btn.join', this._onJoinClick.bind(this));
+			this.$el.on('click', '.dlg.games tr', this._onServerClick.bind(this));
+			this.$el.on('click', '.btn.find-games', this._onFindGamesClick.bind(this));
 			this.$el.on('click', '.btn.help', function () {this.showDialog('help')}.bind(this));
 			this.$el.on('keypress', 'input[name="message"]', this.sendMessage.bind(this));
 		},
@@ -172,6 +205,11 @@
 			this.showDialog('connection');
 		},
 
+		_onFindGamesClick: function () {
+			this.showDialog('games');
+			this.getServers();
+		},
+
 		_onReadyClick: function () {
 			if (this.game.player.isReady) {
 				this.game.send('waiting');
@@ -183,6 +221,12 @@
 		_onResetClick: function () {
 			this.closeDialog();
 			this.game.reset();
+		},
+
+		_onServerClick: function (e) {
+			var address = $(e.currentTarget).attr('rel');
+			this.lastAddress = address;
+			this.showDialog('connection');
 		}
 	})
 }()

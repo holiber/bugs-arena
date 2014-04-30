@@ -4,13 +4,13 @@
     <list default="true" id="49f046c1-2114-449e-b9a4-01ed61a4c0b9" name="Default" comment="" />
     <ignored path="bugs.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396307174563" ignored="false" />
+    <file path="/index.html" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398781318828" ignored="false" />
     <file path="/class.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1394096758109" ignored="false" />
-    <file path="/game.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396213865046" ignored="false" />
+    <file path="/game.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398776211865" ignored="false" />
     <file path="/bug.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396169861205" ignored="false" />
-    <file path="/dummy.xml" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396257796214" ignored="false" />
-    <file path="/main.css" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396444372221" ignored="false" />
-    <file path="/Dummy.txt" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396352727890" ignored="false" />
+    <file path="/dummy.xml" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397743159012" ignored="false" />
+    <file path="/main.css" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398864078810" ignored="false" />
+    <file path="/Dummy.txt" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397725061016" ignored="false" />
     <file path="$PROJECT_DIR$/../effmobile/Gruntfile.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1394092912776" ignored="false" />
     <file path="$PROJECT_DIR$/../effmobile/dist/scripts/modules/app.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1394090586020" ignored="false" />
     <file path="$PROJECT_DIR$/../effmobile/dist/scripts/modules/main-content-loader.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1394090586020" ignored="false" />
@@ -23,45 +23,45 @@
     <file path="$PROJECT_DIR$/../effmobile/.tmp/scripts/modules/main-content-loader.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1394091906239" ignored="false" />
     <file path="$PROJECT_DIR$/../effmobile/.tmp/scripts/modules/app.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1394091906239" ignored="false" />
     <file path="/main.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395746463388" ignored="false" />
-    <file path="$PROJECT_DIR$/../effmobile/app/index.html" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1394098218355" ignored="false" />
-    <file path="$PROJECT_DIR$/../effmobile/app/scripts/modules/app-layout.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1394098218355" ignored="false" />
-    <file path="/math.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396035885595" ignored="false" />
+    <file path="$PROJECT_DIR$/../effmobile/app/index.html" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397575439078" ignored="false" />
+    <file path="$PROJECT_DIR$/../effmobile/app/scripts/modules/app-layout.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397575439078" ignored="false" />
+    <file path="/math.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398781752481" ignored="false" />
     <file path="/fxText.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1394222626844" ignored="false" />
     <file path="/sprite.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396213365878" ignored="false" />
     <file path="/blood.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1394291452706" ignored="false" />
     <file path="/bonus.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1394779359418" ignored="false" />
-    <file path="/block.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396025681815" ignored="false" />
+    <file path="/block.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398436334953" ignored="false" />
     <file path="/map.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1394369937376" ignored="false" />
     <file path="/fourSectors.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396025287068" ignored="false" />
-    <file path="/panel.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396257124565" ignored="false" />
+    <file path="/panel.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398775842707" ignored="false" />
     <file path="/player.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395990470332" ignored="false" />
-    <file path="/server.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395989129215" ignored="false" />
-    <file path="/target.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396214084595" ignored="false" />
+    <file path="/server.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398777885340" ignored="false" />
+    <file path="/target.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398781482701" ignored="false" />
     <file path="/a.java" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1394710060896" ignored="false" />
-    <file path="/a.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1394710126511" ignored="false" />
+    <file path="/a.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396983862230" ignored="false" />
     <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/modules/counters/tpl/counter-layout.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395237375678" ignored="false" />
     <file path="/counter-layout.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395128999449" ignored="false" />
     <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/modules/triggers/tpl/triggers.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395239012858" ignored="false" />
     <file path="/triggers.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395239010006" ignored="false" />
     <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/modules/triggers/views.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395652707958" ignored="false" />
-    <file path="/views.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395662265215" ignored="false" />
-    <file path="/models.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395135368699" ignored="false" />
+    <file path="/views.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397829162366" ignored="false" />
+    <file path="/models.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397832599380" ignored="false" />
     <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/modules/triggers/models.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395066266524" ignored="false" />
-    <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/modules/counters/controller.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396255649068" ignored="false" />
-    <file path="/controller.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395660497140" ignored="false" />
-    <file path="/a.dummy" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395665532576" ignored="false" />
+    <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/modules/counters/controller.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396872437682" ignored="false" />
+    <file path="/controller.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397207010968" ignored="false" />
+    <file path="/a.dummy" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397375945660" ignored="false" />
     <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/modules/counters/models.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395159435761" ignored="false" />
     <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/modules/slices/views.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395304718173" ignored="false" />
     <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/modules/slices/models.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1394808259724" ignored="false" />
     <file path="/triggger.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1394789241199" ignored="false" />
     <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/modules/triggers/tpl/triggger.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1394789266878" ignored="false" />
     <file path="/trigger.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395238839860" ignored="false" />
-    <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/modules/triggers/tpl/trigger.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395243266495" ignored="false" />
+    <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/modules/triggers/tpl/trigger.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396965619562" ignored="false" />
     <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/modules/users/views.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395221931560" ignored="false" />
     <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/modules/slices/tpl/slices.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395217337714" ignored="false" />
     <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/modules/slices/tpl/wizard-rule.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1394808259724" ignored="false" />
-    <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/modules/app/app.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395221931560" ignored="false" />
-    <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/modules/targets/views.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396256113699" ignored="false" />
+    <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/modules/app/app.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397144977989" ignored="false" />
+    <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/modules/targets/views.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397145612353" ignored="false" />
     <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/modules/targets/models.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395651096760" ignored="false" />
     <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/modules/targets/tpl/targets.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396255879960" ignored="false" />
     <file path="/targets.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396255879960" ignored="false" />
@@ -70,16 +70,16 @@
     <file path="$PROJECT_DIR$/../wtrace-front/app/bower_components/marionette/src/marionette.view.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395134530330" ignored="false" />
     <file path="$PROJECT_DIR$/../wtrace-front/.tmp/scripts/compiled-templates.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396255964335" ignored="false" />
     <file path="$PROJECT_DIR$/../wtrace-front/dist/scripts/compiled-templates.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395661348700" ignored="false" />
-    <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/modules/targets/tpl/target-group.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396255649068" ignored="false" />
-    <file path="/target-group.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395662611615" ignored="false" />
+    <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/modules/targets/tpl/target-group.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397145688952" ignored="false" />
+    <file path="/target-group.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397145311672" ignored="false" />
     <file path="$PROJECT_DIR$/../wtrace-front/app/sass/modules/_modules.scss" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395159435761" ignored="false" />
-    <file path="/_modules.scss" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395149359118" ignored="false" />
+    <file path="/_modules.scss" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397656320817" ignored="false" />
     <file path="$PROJECT_DIR$/../wtrace-front/app/sass/modules/_targets.scss" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395661362654" ignored="false" />
     <file path="/_targets.scss" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395661360094" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396352613862" ignored="false" />
     <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/modules/base/models.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395233443870" ignored="false" />
     <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/modules/notifications/data.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395304718173" ignored="false" />
-    <file path="/data.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395216374139" ignored="false" />
+    <file path="/data.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398265609521" ignored="false" />
     <file path="/notification-settings.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395217267302" ignored="false" />
     <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/modules/notifications/tpl/notification-settings.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395237375678" ignored="false" />
     <file path="$PROJECT_DIR$/../wtrace-front/app/sass/modules/_notification.scss" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395217337714" ignored="false" />
@@ -89,7 +89,7 @@
     <file path="$PROJECT_DIR$/../wtrace-site/.idea/misc.xml" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395219812619" ignored="false" />
     <file path="$PROJECT_DIR$/../wtrace-site/.idea/workspace.xml" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395228055058" ignored="false" />
     <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/modules/notifications/models.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395221931559" ignored="false" />
-    <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/modules/counters/views.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395304718173" ignored="false" />
+    <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/modules/counters/views.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396872437682" ignored="false" />
     <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/modules/tokens/views.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395304718173" ignored="false" />
     <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/modules/tokens/controller.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395221931559" ignored="false" />
     <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/modules/users/controller.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395221931560" ignored="false" />
@@ -104,7 +104,7 @@
     <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/main.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395304718173" ignored="false" />
     <file path="$PROJECT_DIR$/../wtrace-front/app/index.html" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395304718173" ignored="false" />
     <file path="$PROJECT_DIR$/../zelmt/index.html" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396344381677" ignored="false" />
-    <file path="$PROJECT_DIR$/../zelmt/css/main.css" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396444373779" ignored="false" />
+    <file path="$PROJECT_DIR$/../zelmt/css/main.css" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398079521732" ignored="false" />
     <file path="$PROJECT_DIR$/../zelmt/js/jquery.min.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395508512699" ignored="false" />
     <file path="$PROJECT_DIR$/../wtrace-front/.tmp/scripts/modules/base/main.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395653201912" ignored="false" />
     <file path="$PROJECT_DIR$/../wtrace-front/.tmp/scripts/modules/base/views.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396255748992" ignored="false" />
@@ -114,8 +114,8 @@
     <file path="$PROJECT_DIR$/../wtrace-front/app/bower_components/front-common/scripts/utils/modals.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396255649068" ignored="false" />
     <file path="$PROJECT_DIR$/../zelmt/info.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396346038822" ignored="false" />
     <file path="/info.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396346036852" ignored="false" />
-    <file path="$PROJECT_DIR$/../zelmt/index.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396431267929" ignored="false" />
-    <file path="/index.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396431238282" ignored="false" />
+    <file path="$PROJECT_DIR$/../zelmt/index.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398424578995" ignored="false" />
+    <file path="/index.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398179756856" ignored="false" />
     <file path="/a.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396354130761" ignored="false" />
     <file path="/home.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396354517957" ignored="false" />
     <file path="$PROJECT_DIR$/../zelmt/pages/home.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396442894659" ignored="false" />
@@ -124,8 +124,8 @@
     <file path="$PROJECT_DIR$/../zelmt/pages/workshop.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396432133254" ignored="false" />
     <file path="/workshop.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396432129851" ignored="false" />
     <file path="$PROJECT_DIR$/../zelmt/scripts/base.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396357308488" ignored="false" />
-    <file path="/base.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396435570338" ignored="false" />
-    <file path="$PROJECT_DIR$/../zelmt/layouts/base.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396435571108" ignored="false" />
+    <file path="/base.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397378388650" ignored="false" />
+    <file path="$PROJECT_DIR$/../zelmt/layouts/base.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398075365159" ignored="false" />
     <file path="$PROJECT_DIR$/../zelmt/404.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396357895350" ignored="false" />
     <file path="/404.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396357895350" ignored="false" />
     <file path="$PROJECT_DIR$/../zelmt/scripts/csvprint.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396430644060" ignored="false" />
@@ -138,6 +138,126 @@
     <file path="/contacts" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396441386044" ignored="false" />
     <file path="$PROJECT_DIR$/../zelmt/pages/contacts.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396441822410" ignored="false" />
     <file path="/contacts.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396441819411" ignored="false" />
+    <file path="$PROJECT_DIR$/../zelmt/docs/moto/ubr/description.html" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396462409397" ignored="false" />
+    <file path="/description.html" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396462452184" ignored="false" />
+    <file path="$PROJECT_DIR$/../zelmt/docs/moto/cbr/description.html" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396462455440" ignored="false" />
+    <file path="$PROJECT_DIR$/../zelmt/scripts/db_conf.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396534679790" ignored="false" />
+    <file path="/db_conf.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396534666101" ignored="false" />
+    <file path="$PROJECT_DIR$/../zelmt/scripts/db_connection.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396625533559" ignored="false" />
+    <file path="/db_connection.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396623977887" ignored="false" />
+    <file path="$PROJECT_DIR$/../zelmt/scripts/models/Good.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396617801399" ignored="false" />
+    <file path="/Good.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396617801399" ignored="false" />
+    <file path="$PROJECT_DIR$/../zelmt/scripts/models" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396617930178" ignored="false" />
+    <file path="/models" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396617930178" ignored="false" />
+    <file path="$PROJECT_DIR$/../zelmt/scripts/models.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397375810954" ignored="false" />
+    <file path="/models.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397337250994" ignored="false" />
+    <file path="$PROJECT_DIR$/../zelmt/pages/spares.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397379282594" ignored="false" />
+    <file path="/spares.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397379281402" ignored="false" />
+    <file path="$PROJECT_DIR$/../zelmt/pages/auth.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396788632091" ignored="false" />
+    <file path="/auth.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396788622465" ignored="false" />
+    <file path="$PROJECT_DIR$/../zelmt/pages/admin.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396785314773" ignored="false" />
+    <file path="/admin.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396785171909" ignored="false" />
+    <file path="$PROJECT_DIR$/../zelmt/pages/auth-ctl.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396786620984" ignored="false" />
+    <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/utils/helptip.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396872437682" ignored="false" />
+    <file path="/lobby.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398783560897" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/app/layout.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396876445413" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/tpl/sidebar.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397055232263" ignored="false" />
+    <file path="/sidebar.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397053873418" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/views.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396877596447" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/controller.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397055232263" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/sources/views.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397207032007" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/sources/tpl/sources.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397206421853" ignored="false" />
+    <file path="/sources.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397206421854" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/sources/models.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397216701137" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/sources/controller.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397207012463" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/models.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397832599380" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/sources/tpl/source.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397216454305" ignored="false" />
+    <file path="/source.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397216452278" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/stats/tpl/stats.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397658258703" ignored="false" />
+    <file path="/stats.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397658258703" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/stats/models.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397650243226" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/stats/controller.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396974120297" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/stats/views.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397743627563" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/payments/models.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397743627563" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/payments/views.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397743627563" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/payments/controller.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396974120297" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/payments/tpl/payments.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397743627563" ignored="false" />
+    <file path="/payments.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397743376294" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/index.html" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396974120297" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/advertisers/controller.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397057099579" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/app/app.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396974120297" ignored="false" />
+    <file path="/a.coffee" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397130708636" ignored="false" />
+    <file path="$PROJECT_DIR$/../modapp/app/scripts/modules/catalog/items/items.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397038747276" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/campagins/tpl/campagins.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397052281984" ignored="false" />
+    <file path="/campagins.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397052281984" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/campagins/controller.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397052545335" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/campagins/models.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397052533918" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/campagins/views.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397052598548" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/campaigns/tpl/campagins.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397053724856" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/campaigns/tpl/campaigns.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397743627563" ignored="false" />
+    <file path="/campaigns.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397742474656" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/campaigns/views.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397743627563" ignored="false" />
+    <file path="/actions.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397648771324" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/actions/tpl/actions.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397648848037" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/actions/controller.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397055232263" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/actions/models.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397743627563" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/actions/views.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397829763998" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/campaigns/models.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397743627563" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/campaigns/controller.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397055232263" ignored="false" />
+    <file path="$PROJECT_DIR$/../zelmt/js/bootstrap.validator.min.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397132379816" ignored="false" />
+    <file path="$PROJECT_DIR$/../wtrace-front/app/bower_components/front-common/blank.html" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397145057176" ignored="false" />
+    <file path="$PROJECT_DIR$/../wtrace-front/app/bower_components/front-common/.bower.json" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397145057177" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/components/filter/view.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397212360206" ignored="false" />
+    <file path="/view.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397212129451" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/actions/tpl/filter.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397832989332" ignored="false" />
+    <file path="/filter.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397833183732" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/components/filter.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398072561073" ignored="false" />
+    <file path="/filter.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398072526758" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/.tmp/scripts/utils/hbs.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397223413400" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/.tmp/scripts/modules/base/views.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397630952062" ignored="false" />
+    <file path="$PROJECT_DIR$/../zelmt/scripts/utils.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397377125710" ignored="false" />
+    <file path="$PROJECT_DIR$/../zelmt/layouts/gallery.html" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397341703272" ignored="false" />
+    <file path="/gallery.html" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397338209697" ignored="false" />
+    <file path="$PROJECT_DIR$/../zelmt/css/bootstrap-image-gallery.min.css" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397339573767" ignored="false" />
+    <file path="/blueimp-gallery.min.css" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397339887365" ignored="false" />
+    <file path="$PROJECT_DIR$/../zelmt/css/blueimp-gallery.min.css" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397339887365" ignored="false" />
+    <file path="$PROJECT_DIR$/../zelmt/js/bootstrap-image-gallery.min.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397339893435" ignored="false" />
+    <file path="$PROJECT_DIR$/../zelmt/layouts/sidebar.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397342501682" ignored="false" />
+    <file path="$PROJECT_DIR$/../zelmt/models/shop.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398079521732" ignored="false" />
+    <file path="/shop.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397377472641" ignored="false" />
+    <file path="$PROJECT_DIR$/../zelmt/scripts/model.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397377426956" ignored="false" />
+    <file path="/model.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397377409381" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/components/partners-filter.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397652813823" ignored="false" />
+    <file path="/partners-filter.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397652817344" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/main.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397573886316" ignored="false" />
+    <file path="$PROJECT_DIR$/../effmobile/app/scripts/modules/payments/tpl/paysystem-form.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397576050462" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/stats/tpl/filter.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397833183732" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/sass/modules/_modules.scss" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397656321180" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/.tmp/styles/main.css" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397656643245" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/.tmp/scripts/utils/form.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397827804014" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/campaigns/tpl/filter.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397743627563" ignored="false" />
+    <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/payments/tpl/filter.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397743627563" ignored="false" />
+    <file path="$PROJECT_DIR$/../git/activetable/src/table.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398068389755" ignored="false" />
+    <file path="/table.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398068046592" ignored="false" />
+    <file path="$PROJECT_DIR$/../git/activetable/bower.json" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398068221968" ignored="false" />
+    <file path="$PROJECT_DIR$/../git/activetable/dist/table.tiny.min.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398083636690" ignored="false" />
+    <file path="$PROJECT_DIR$/../git/activetable/dist/table.tiny.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398157958771" ignored="false" />
+    <file path="$PROJECT_DIR$/../git/activetable/dist/table.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398083636690" ignored="false" />
+    <file path="$PROJECT_DIR$/../git/activetable/dist/table.min.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398083636690" ignored="false" />
+    <file path="$PROJECT_DIR$/../zelmt/models/motorcycle.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398424578995" ignored="false" />
+    <file path="$PROJECT_DIR$/../zelmt/scripts/file_loader.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398424578530" ignored="false" />
+    <file path="/file_loader.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398181710682" ignored="false" />
+    <file path="$PROJECT_DIR$/../git/qstore/src/data.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398265610739" ignored="false" />
+    <file path="$PROJECT_DIR$/../git/qstore/package.json" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398265636449" ignored="false" />
+    <file path="$PROJECT_DIR$/../git/qstore/qstore.min.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398265759355" ignored="false" />
+    <file path="$PROJECT_DIR$/../git/qstore/qstore.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398265759355" ignored="false" />
+    <file path="$PROJECT_DIR$/../git/qstore/.gitignore" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398265765702" ignored="false" />
+    <file path="/.gitignore" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398265765701" ignored="false" />
+    <file path="$PROJECT_DIR$/../git/qstore/README.md" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398265926646" ignored="false" />
+    <file path="$PROJECT_DIR$/../zelmt/pages/moto.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398424578994" ignored="false" />
+    <file path="/hello.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398434330131" ignored="false" />
+    <file path="/dogfight.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398436345262" ignored="false" />
+    <file path="/fxLine.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398864955330" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,73 +348,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/server.js">
+      <file leaf-file-name="lobby.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/lobby.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="63" selection-start="1317" selection-end="1317" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="game.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/game.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="20" selection-start="1518" selection-end="1530" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="target.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/target.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="74" selection-start="460" selection-end="464" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="panel.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/panel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="155" column="23" selection-start="5200" selection-end="5200" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/node_modules/socket.io/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="2" selection-start="825" selection-end="842" vertical-scroll-proportion="-24.375">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="4" selection-start="46" selection-end="46" vertical-scroll-proportion="0.042857144">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="123" column="90" selection-start="3817" selection-end="3817" vertical-scroll-proportion="0.0">
+            <state line="34" column="29" selection-start="909" selection-end="909" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -303,7 +360,43 @@
       <file leaf-file-name="math.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/math.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="78" selection-start="2657" selection-end="2668" vertical-scroll-proportion="0.0">
+            <state line="96" column="0" selection-start="1746" selection-end="1746" vertical-scroll-proportion="-0.16">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fxText.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/fxText.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="22" selection-start="393" selection-end="393" vertical-scroll-proportion="-10.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="game.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/game.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="334" column="16" selection-start="8714" selection-end="8726" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="22" selection-start="527" selection-end="527" vertical-scroll-proportion="0.22346368">
               <folding />
             </state>
           </provider>
@@ -312,7 +405,34 @@
       <file leaf-file-name="bug.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/bug.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="406" column="28" selection-start="10261" selection-end="10261" vertical-scroll-proportion="0.0">
+            <state line="334" column="13" selection-start="8654" selection-end="8654" vertical-scroll-proportion="-200.4">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="target.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/target.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="45" selection-start="1302" selection-end="1302" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="351" column="13" selection-start="4789" selection-end="4789" vertical-scroll-proportion="-37.76">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fxLine.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/fxLine.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="27" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -328,22 +448,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/player.js" />
-        <option value="$PROJECT_DIR$/css/main.css" />
-        <option value="$PROJECT_DIR$/js/maps/fourSectors.js" />
+        <option value="$PROJECT_DIR$/js/maps/dogFight.js" />
+        <option value="$PROJECT_DIR$/js/maps/hello.js" />
         <option value="$PROJECT_DIR$/js/block.js" />
-        <option value="$PROJECT_DIR$/js/sprite.js" />
-        <option value="$PROJECT_DIR$/js/bullet.js" />
-        <option value="$PROJECT_DIR$/js/target.js" />
+        <option value="$PROJECT_DIR$/js/maps/dogfight.js" />
         <option value="$PROJECT_DIR$/js/bug.js" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/math.js" />
-        <option value="$PROJECT_DIR$/js/game.js" />
-        <option value="$PROJECT_DIR$/server/server.js" />
+        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/js/panel.js" />
-        <option value="$PROJECT_DIR$/server/.package.json" />
-        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/js/game.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/server/lobby.js" />
+        <option value="$PROJECT_DIR$/js/math.js" />
+        <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/js/fxLine.js" />
+        <option value="$PROJECT_DIR$/js/target.js" />
         <option value="$PROJECT_DIR$/server/package.json" />
+        <option value="$PROJECT_DIR$/server/server.js" />
       </list>
     </option>
   </component>
@@ -380,8 +500,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -424,15 +544,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="socket.io" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -446,7 +558,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -474,6 +586,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/js" />
+      <recent name="$PROJECT_DIR$/js/maps" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -638,7 +751,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17609392" sideWeight="0.64179105" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.64179105" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32940108" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -714,108 +827,114 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/bonus.js">
+    <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="10" selection-start="784" selection-end="784" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="301" column="0" selection-start="4138" selection-end="4138" vertical-scroll-proportion="-15.76" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/block.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="28" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/sprite.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="27" selection-start="782" selection-end="782" vertical-scroll-proportion="0.0">
+        <state line="2" column="3" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/maps/fourSectors.js">
+    <entry file="file://$PROJECT_DIR$/README.MD">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="31" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/bullet.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="30" selection-start="2308" selection-end="2308" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/bug.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="406" column="28" selection-start="10261" selection-end="10261" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="90" selection-start="3817" selection-end="3817" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/math.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="78" selection-start="2657" selection-end="2668" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/target.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="74" selection-start="460" selection-end="464" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/game.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="20" selection-start="1518" selection-end="1530" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="63" selection-start="1317" selection-end="1317" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/panel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="155" column="23" selection-start="5200" selection-end="5200" vertical-scroll-proportion="0.0">
+        <state line="46" column="179" selection-start="1323" selection-end="1323" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/js/maps/hello.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
+        <state line="35" column="79" selection-start="1227" selection-end="1227" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/node_modules/socket.io/package.json">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="2" selection-start="825" selection-end="842" vertical-scroll-proportion="-24.375">
+        <state line="17" column="39" selection-start="865" selection-end="865" vertical-scroll-proportion="50.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/bug.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="334" column="13" selection-start="8654" selection-end="8654" vertical-scroll-proportion="-200.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/math.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="96" column="0" selection-start="1746" selection-end="1746" vertical-scroll-proportion="-0.16">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/fxText.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/game.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="334" column="16" selection-start="8714" selection-end="8726" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/fxLine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="27" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/target.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="45" selection-start="1302" selection-end="1302" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="351" column="13" selection-start="4789" selection-end="4789" vertical-scroll-proportion="-37.76">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/lobby.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="29" selection-start="909" selection-end="909" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="4" selection-start="46" selection-end="46" vertical-scroll-proportion="0.042857144">
+        <state line="16" column="22" selection-start="393" selection-end="393" vertical-scroll-proportion="-10.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="22" selection-start="527" selection-end="527" vertical-scroll-proportion="0.22346368">
           <folding />
         </state>
       </provider>

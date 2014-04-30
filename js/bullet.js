@@ -1,6 +1,5 @@
 !function () {
 
-	var SPEED = 10;
 	var WEAPON = {
 		acorn: {
 			speed: 10,

@@ -185,6 +185,11 @@ input {
 	min-width: 375px;
 }
 
+.dlg.games {
+	left: -530px;
+	min-width: 480px;
+}
+
 .dlg.help {
 	left: -500px;
 	width: 400px;
@@ -208,6 +213,11 @@ input {
 
 .table th {
 	border-bottom: 1px solid orange;
+}
+
+.table.interactive tbody tr:hover {
+	cursor: default;
+	color: orangered;
 }
 
 .when-game {display: none}
@@ -335,8 +345,16 @@ input {
 }
 
 .go-fx-text {
-	font-weight: bold;
+	 font-weight: bold;
+	 z-index: 200;
+ }
+
+.go-fx-line {
+	width: 1px;
 	z-index: 200;
+	transform-origin: 0 0;
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
 }
 
 .spr-bug-crashed {

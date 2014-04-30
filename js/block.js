@@ -6,13 +6,14 @@
 			this._super();
 			this.params = $.extend({
 				x: 0,
-				y: 0
+				y: 0,
+				maxHp: 100
 			}, params);
 			this.isColliding = true;
 			this.x = this.params.x;
 			this.y = this.params.y;
-			this.hp = 150;
-			this.maxHp = 150;
+			this.maxHp = this.params.maxHp;
+			this.hp = this.maxHp;
 			this.kickReloadTime = 50;
 			this.kickReloadTimeLeft = 0;
 		},

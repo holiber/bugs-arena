@@ -18,6 +18,7 @@
 	<script src="js/panel.js"></script>
 	<script src="js/math.js"></script>
 	<script src="js/fxText.js"></script>
+	<script src="js/fxLine.js"></script>
 	<script src="js/sprite.js"></script>
 	<script src="js/blood.js"></script>
 	<script src="js/bonus.js"></script>
@@ -28,6 +29,8 @@
 	<script src="js/main.js"></script>
 	<script src="js/map.js"></script>
 	<script src="js/maps/fourSectors.js"></script>
+	<script src="js/maps/dogfight.js"></script>
+	<script src="js/maps/hello.js"></script>
 
 </head>
 <body>
@@ -37,7 +40,8 @@
 		<div class="panel">
 			<h2>Bugs arena</h2>
 
-			<div class="btn join when-menu">Join game</div>
+			<div class="btn find-games when-menu">Find games</div>
+			<div class="btn join when-menu">Connect to IP</div>
 			<div class="btn help when-menu">Help</div>
 
 			<div class="players screen when-game">
@@ -63,6 +67,7 @@
 					Server:
 					<input name="address" value=""/>
 					<div class="btn connect">Connect</div>
+					<div class="btn close">Close</div>
 				</div>
 				<div class="connecting">
 					Connecting...
@@ -97,6 +102,28 @@
 					</tbody>
 				</table>
 				<div class="btn reset">Close</div>
+			</div>
+
+			<div class="dlg games">
+				<div class="title">Game servers</div>
+				<div class="load-state loading">Search games...</div>
+				<div class="load-state done">
+					<table class="table interactive">
+						<thead>
+							<th>name</th>
+							<th>address</th>
+							<th>players</th>
+							<th>map</th>
+							<th>version</th>
+						</thead>
+						<tbody>
+
+						</tbody>
+					</table>
+					<div class="btn find-games">Refresh</div>
+				</div>
+				<div class="load-state error">No games found</div>
+				<div class="btn close">Close</div>
 			</div>
 
 			<div class="dlg help">

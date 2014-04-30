@@ -22,7 +22,7 @@
 
 	var LEVELS = {
 		1: 0,
-		2: 50
+		2: 150
 	}
 
 	this.Game.classes.Bug = Game.GameObject.extend({
@@ -225,7 +225,6 @@
 			}
 			this.$rank.removeClass('health damage');
 			this.$rank.addClass(rank);
-
 
 
 			if (this.fight.enemy) {

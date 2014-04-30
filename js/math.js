@@ -4,6 +4,10 @@
 		var Vec = Game.Vec = Class.extend({
 
 		init: function(x_, y_) {
+			if (typeof x_ == 'object') {
+				this.setV(x_);
+				return;
+			}
 			this.x= typeof x_ == 'number' ? x_ : 0;
 			this.y= typeof y_ == 'number' ? y_ : 0;
 		},
@@ -90,7 +94,7 @@
 				return (y > 0) ? (3 * Math.PI) / 2 : Math.PI / 2;
 			}
 			var result = Math.atan(y/x);
-			//box2d angle fix
+
 			result += Math.PI/2;
 			if (x < 0) result = result - Math.PI;
 			return result;
@@ -98,6 +102,11 @@
 
 		distanceTo: function (v) {
 			return Math.sqrt((v.x - this.x) * (v.x - this.x) + (v.y - this.y) * (v.y - this.y));
+		},
+
+		angleTo: function (v) {
+			var v = this.vectorTo(v);
+			return v.angle();
 		},
 
 		vectorTo: function (v) {
@@ -112,22 +121,7 @@
 		}
 	});
 
-	var XorShiftGenerator = Game.XorShiftGenerator = function (initializer) {
-		this.w = 88675123 //initializer || 88675123;
-		this.x = 123456789;
-		this.y = 362436069;
-		this.z = 521288629;
-	}
 
-	XorShiftGenerator.prototype = {
-		next: function () {
-			var t = this.x ^ (this.x << 11);
-			this.x = this.y;
-			this.y = this.z; this.z = this.w;
-			this.w = this.w ^ (this.w >> 19) ^ t ^ (t >> 8);
-			return (this.w / 1000000000) % 1;
-		}
-	}
 
 	var ParkMillerGenerator = Game.ParkMillerGenerator = function (initializer) {
 		this.a = 16807;

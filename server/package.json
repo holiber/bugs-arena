@@ -1,5 +1,22 @@
 {
-	"dependencies": {
-		"socket.io": "0.9.16"
-	}
+  "dependencies": {
+    "socket.io": "0.9.16",
+    "request": "~2.34.0",
+    "qstore": "~0.7.10",
+    "express": "~4.0.0",
+    "socket.io-client": "~0.9.16",
+    "body-parser": "~1.0.2",
+    "html-entities": "~1.0.10"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "Bugs arena server",
+  "description": "HTML5 multiplayer game",
+  "version": "0.1.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": "",
+  "author": "alexclimber (kadabrik91@gmail.com)",
+  "license": "BSD"
 }
