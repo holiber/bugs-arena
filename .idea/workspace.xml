@@ -4,7 +4,7 @@
     <list default="true" id="49f046c1-2114-449e-b9a4-01ed61a4c0b9" name="Default" comment="" />
     <ignored path="bugs.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398781318828" ignored="false" />
+    <file path="/index.html" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398867525928" ignored="false" />
     <file path="/class.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1394096758109" ignored="false" />
     <file path="/game.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398776211865" ignored="false" />
     <file path="/bug.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396169861205" ignored="false" />
@@ -252,7 +252,7 @@
     <file path="$PROJECT_DIR$/../git/qstore/qstore.min.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398265759355" ignored="false" />
     <file path="$PROJECT_DIR$/../git/qstore/qstore.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398265759355" ignored="false" />
     <file path="$PROJECT_DIR$/../git/qstore/.gitignore" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398265765702" ignored="false" />
-    <file path="/.gitignore" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398265765701" ignored="false" />
+    <file path="/.gitignore" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398867606575" ignored="false" />
     <file path="$PROJECT_DIR$/../git/qstore/README.md" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398265926646" ignored="false" />
     <file path="$PROJECT_DIR$/../zelmt/pages/moto.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398424578994" ignored="false" />
     <file path="/hello.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398434330131" ignored="false" />
@@ -357,10 +357,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="math.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/math.js">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="0" selection-start="1746" selection-end="1746" vertical-scroll-proportion="-0.16">
+            <state line="16" column="40" selection-start="851" selection-end="851" vertical-scroll-proportion="-10.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="0" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -375,10 +384,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="package.json" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="22" selection-start="393" selection-end="393" vertical-scroll-proportion="-10.0">
+            <state line="13" column="28" selection-start="303" selection-end="303" vertical-scroll-proportion="0.18571429">
               <folding />
             </state>
           </provider>
@@ -393,19 +402,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="22" selection-start="527" selection-end="527" vertical-scroll-proportion="0.22346368">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bug.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/bug.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="334" column="13" selection-start="8654" selection-end="8654" vertical-scroll-proportion="-200.4">
+            <state line="16" column="22" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -448,7 +448,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/maps/dogFight.js" />
         <option value="$PROJECT_DIR$/js/maps/hello.js" />
         <option value="$PROJECT_DIR$/js/block.js" />
         <option value="$PROJECT_DIR$/js/maps/dogfight.js" />
@@ -456,14 +455,15 @@
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/js/panel.js" />
         <option value="$PROJECT_DIR$/js/game.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/server/lobby.js" />
         <option value="$PROJECT_DIR$/js/math.js" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/js/fxLine.js" />
         <option value="$PROJECT_DIR$/js/target.js" />
-        <option value="$PROJECT_DIR$/server/package.json" />
         <option value="$PROJECT_DIR$/server/server.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/server/package.json" />
       </list>
     </option>
   </component>
@@ -531,34 +531,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bugs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bugs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bugs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bugs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -827,13 +799,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="3" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.MD">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -851,13 +816,6 @@
     <entry file="file://$PROJECT_DIR$/js/maps/hello.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="79" selection-start="1227" selection-end="1227" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="39" selection-start="865" selection-end="865" vertical-scroll-proportion="50.625">
           <folding />
         </state>
       </provider>
@@ -925,16 +883,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/package.json">
+    <entry file="file://$PROJECT_DIR$/server/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="22" selection-start="393" selection-end="393" vertical-scroll-proportion="-10.0">
+        <state line="16" column="22" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/server.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="22" selection-start="527" selection-end="527" vertical-scroll-proportion="0.22346368">
+        <state line="16" column="40" selection-start="851" selection-end="851" vertical-scroll-proportion="-10.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="28" selection-start="303" selection-end="303" vertical-scroll-proportion="0.18571429">
           <folding />
         </state>
       </provider>

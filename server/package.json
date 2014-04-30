@@ -11,7 +11,7 @@
   "scripts": {
     "start": "node server.js"
   },
-  "name": "Bugs arena server",
+  "name": "bugs-arena-server",
   "description": "HTML5 multiplayer game",
   "version": "0.1.0",
   "main": "server.js",
