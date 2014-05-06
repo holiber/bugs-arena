@@ -2,7 +2,7 @@
 Multiplayer game on JavaScript, HTML and CSS3
 ![preview](https://raw.githubusercontent.com/holiber/bugs-arena/master/docs/preview.png)
 
-[play online](http://bugsarena.alexclimber.com)
+[PLAY ONLINE](http://bugsarena.alexclimber.com)
 
 ##Game overview
 Grow your colony of beetles and destroy the enemy bugs.  
