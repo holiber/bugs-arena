@@ -4,7 +4,7 @@
     <list default="true" id="49f046c1-2114-449e-b9a4-01ed61a4c0b9" name="Default" comment="" />
     <ignored path="bugs.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398867525928" ignored="false" />
+    <file path="/index.html" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1399023533341" ignored="false" />
     <file path="/class.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1394096758109" ignored="false" />
     <file path="/game.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398776211865" ignored="false" />
     <file path="/bug.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396169861205" ignored="false" />
@@ -33,7 +33,7 @@
     <file path="/block.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398436334953" ignored="false" />
     <file path="/map.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1394369937376" ignored="false" />
     <file path="/fourSectors.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396025287068" ignored="false" />
-    <file path="/panel.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398775842707" ignored="false" />
+    <file path="/panel.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1399022414829" ignored="false" />
     <file path="/player.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1395990470332" ignored="false" />
     <file path="/server.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398777885340" ignored="false" />
     <file path="/target.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398781482701" ignored="false" />
@@ -159,7 +159,7 @@
     <file path="/admin.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396785171909" ignored="false" />
     <file path="$PROJECT_DIR$/../zelmt/pages/auth-ctl.php" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396786620984" ignored="false" />
     <file path="$PROJECT_DIR$/../wtrace-front/app/scripts/utils/helptip.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396872437682" ignored="false" />
-    <file path="/lobby.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398783560897" ignored="false" />
+    <file path="/lobby.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398888637024" ignored="false" />
     <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/app/layout.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1396876445413" ignored="false" />
     <file path="$PROJECT_DIR$/../plumbum-front/app/scripts/modules/partners/tpl/sidebar.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397055232263" ignored="false" />
     <file path="/sidebar.hbs" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1397053873418" ignored="false" />
@@ -258,6 +258,7 @@
     <file path="/hello.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398434330131" ignored="false" />
     <file path="/dogfight.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398436345262" ignored="false" />
     <file path="/fxLine.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1398864955330" ignored="false" />
+    <file path="/tastylands.js" changelist="49f046c1-2114-449e-b9a4-01ed61a4c0b9" time="1399023388167" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -348,10 +349,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="panel.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="panel.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/panel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="31" selection-start="44" selection-end="44" vertical-scroll-proportion="0.04950495">
+            <state line="97" column="81" selection-start="3028" selection-end="3028" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tastylands.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/maps/tastylands.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="25" selection-start="850" selection-end="860" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -360,16 +370,16 @@
       <file leaf-file-name="lobby.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/lobby.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="29" selection-start="909" selection-end="909" vertical-scroll-proportion="0.0">
+            <state line="34" column="30" selection-start="910" selection-end="910" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="40" selection-start="851" selection-end="851" vertical-scroll-proportion="-10.0">
+            <state line="34" column="0" selection-start="1514" selection-end="1514" vertical-scroll-proportion="0.4857143">
               <folding />
             </state>
           </provider>
@@ -405,7 +415,7 @@
       <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="159" selection-end="211" vertical-scroll-proportion="-3.6">
+            <state line="33" column="30" selection-start="914" selection-end="914" vertical-scroll-proportion="-19.8">
               <folding />
             </state>
           </provider>
@@ -424,16 +434,9 @@
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
             <state line="351" column="13" selection-start="4789" selection-end="4789" vertical-scroll-proportion="-37.76">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fxLine.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/fxLine.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="27" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0">
-              <folding />
+              <folding>
+                <marker date="1398864611000" expanded="true" signature="4733:4774" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -448,29 +451,29 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/maps/hello.js" />
         <option value="$PROJECT_DIR$/js/block.js" />
         <option value="$PROJECT_DIR$/js/maps/dogfight.js" />
         <option value="$PROJECT_DIR$/js/bug.js" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/js/game.js" />
-        <option value="$PROJECT_DIR$/server/lobby.js" />
         <option value="$PROJECT_DIR$/js/math.js" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/js/fxLine.js" />
         <option value="$PROJECT_DIR$/js/target.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/server/package.json" />
         <option value="$PROJECT_DIR$/server/server.js" />
+        <option value="$PROJECT_DIR$/server/lobby.js" />
         <option value="$PROJECT_DIR$/js/panel.js" />
+        <option value="$PROJECT_DIR$/js/maps/tastylands.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="1366" />
-    <option name="height" value="768" />
+    <option name="width" value="1920" />
+    <option name="height" value="1200" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -548,6 +551,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bugs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bugs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -571,8 +592,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/js" />
       <recent name="$PROJECT_DIR$/js/maps" />
+      <recent name="$PROJECT_DIR$/js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -716,7 +737,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="768" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -737,7 +758,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35454544" sideWeight="0.64179105" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.64179105" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32940108" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -813,13 +834,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.MD">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/maps/hello.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="79" selection-start="1227" selection-end="1227" vertical-scroll-proportion="0.0">
@@ -872,21 +886,9 @@
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="351" column="13" selection-start="4789" selection-end="4789" vertical-scroll-proportion="-37.76">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/lobby.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="29" selection-start="909" selection-end="909" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="40" selection-start="851" selection-end="851" vertical-scroll-proportion="-10.0">
-          <folding />
+          <folding>
+            <marker date="1398864611000" expanded="true" signature="4733:4774" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -904,13 +906,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="159" selection-end="211" vertical-scroll-proportion="-3.6">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/game.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="334" column="16" selection-start="8714" selection-end="8726" vertical-scroll-proportion="0.0">
@@ -918,9 +913,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/lobby.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="30" selection-start="910" selection-end="910" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/panel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="31" selection-start="44" selection-end="44" vertical-scroll-proportion="0.04950495">
+        <state line="97" column="81" selection-start="3028" selection-end="3028" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/maps/tastylands.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="25" selection-start="850" selection-end="860" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="30" selection-start="914" selection-end="914" vertical-scroll-proportion="-19.8">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="0" selection-start="1514" selection-end="1514" vertical-scroll-proportion="0.4857143">
           <folding />
         </state>
       </provider>

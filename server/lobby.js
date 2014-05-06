@@ -32,6 +32,7 @@ LobbyServer.prototype = {
 	},
 
 	refresh: function () {
+		this.hosts.sort('id');
 		var now = new Date();
 		var removedCnt = this.hosts.remove(function (host) {
 			if (now.valueOf() - host.lastSync.valueOf() >= HOST_TIMEOUT) {

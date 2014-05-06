@@ -95,7 +95,7 @@
 
 			if (this.dialog == 'wait-room') {
 				var $dlg = $('.dlg.wait-room');
-				$dlg.find('.title').html('Server ' + this.lastAddress);
+				$dlg.find('.title').html('Server: ' + this.lastAddress + ', map: ' + this.game.serverMap);
 				var $tbody = $dlg.find('tbody').empty();
 				for (var key in this.game.players) {
 					var p = this.game.players[key];
