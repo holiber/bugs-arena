@@ -2,6 +2,7 @@
 Multiplayer game on JavaScript, HTML and CSS3
 ![preview](https://raw.githubusercontent.com/holiber/bugs-arena/master/docs/preview.png)
 
+[WATCH VIDEO](http://www.youtube.com/watch?v=AHYeoVX5d9c)   
 [PLAY ONLINE](http://bugsarena.alexclimber.com)
 
 ##Game overview
