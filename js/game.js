@@ -281,7 +281,11 @@
 
 		_onArenaClick: function (e) {
 			var $el = $(e.target);
-			var position = {x: e.offsetX, y: e.offsetY};
+			var position = {
+				x: e.offsetX == undefined ? e.layerX :e.offsetX,
+				y: e.offsetY == undefined ? e.layerY :e.offsetY
+			};
+
 			if (!$el.hasClass('arena')) {
 				var $el = $el.hasClass('go') ? $el : $el.closest('.go')
 				var pos = $el.position();
