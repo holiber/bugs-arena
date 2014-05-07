@@ -282,8 +282,8 @@
 		_onArenaClick: function (e) {
 			var $el = $(e.target);
 			var position = {
-				x: e.offsetX == undefined ? e.layerX :e.offsetX,
-				y: e.offsetY == undefined ? e.layerY :e.offsetY
+				x: e.offsetX == undefined ? e.originalEvent.layerX : e.offsetX,
+				y: e.offsetY == undefined ? e.originalEvent.layerY : e.offsetY
 			};
 
 			if (!$el.hasClass('arena')) {
