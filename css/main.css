@@ -229,6 +229,7 @@ input {
 .go {
 	position: absolute;
 	display: none;
+	-webkit-transform : translateZ(0);
 }
 
 /* BUG */

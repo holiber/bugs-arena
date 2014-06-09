@@ -11,7 +11,7 @@ var TICK_DELAY = 25; //ms
 var SEND_DELAY = 5; //frames
 var START_GAME_DELAY = 50; //frames
 var LOBBY_SYNC_DELAY = 200; //frames
-var MAPS = ['FourSectors', 'Dogfight'];
+var MAPS = ['FourSectors', 'Dogfight', 'Zombie'];
 var Entities = require('html-entities').AllHtmlEntities;
 var entities = new Entities();
 var log = console.log;
@@ -292,6 +292,7 @@ GameServer.prototype = {
 	},
 
 	_onChatMessage: function (client, msg) {
+		msg = entities.encode(msg);
 		this.event('chatMessage', {player: client.id, msg: msg});
 	},
 

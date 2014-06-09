@@ -134,7 +134,7 @@
 			this.poisonTime = 50;
 		},
 
-		step: function (globalEvents) {
+		step: function () {
 
 			// hp
 			if (this.hp <= 0) {

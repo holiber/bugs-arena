@@ -2,7 +2,6 @@
 
 	var PROTOCOL_VERSION = 1;
 	var TICK_DELAY = 25;
-	var DEFAULT_MAP = 'Hello';
 	var MAX_AGE_DIFF = 10;
 	var SKIP_AGE_DIFF = 30;
 
