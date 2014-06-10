@@ -64,7 +64,6 @@
 			this.maxSpawnXp = 15;
 			this.speedDispersion = 0.1;
 			this.target = null;
-			this.isFlagship = false;
 			this.level = 1;
 			this.highlightTime = 0;
 			this.poisonTime = 0;
@@ -83,7 +82,7 @@
 				this.x = Math.random() * this.game.arenaWidth;
 				this.y = Math.random() * this.game.arenaHeight;
 			}
-			for (playerId in this.game.players) {
+			for (var playerId in this.game.players) {
 				var player = this.game.players[playerId];
 				if (player.team == this.team) {
 					player.addUnit(this);
@@ -118,7 +117,6 @@
 		},
 
 		fire: function (type, target) {
-
 			var wc = this.getWorldCenter();
 			target = target || this.findNearest(function (gameObject) {
 				return (gameObject instanceof Game.classes.Bug) && gameObject.team != this.team;
