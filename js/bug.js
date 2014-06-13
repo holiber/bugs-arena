@@ -385,7 +385,7 @@
 		captureBonus: function (bonus) {
 			bonus.captured = true;
 			if (bonus.type == 'apple') {
-				var bonusHp = 50;
+				var bonusHp = 100;
 				this.hp+= bonusHp;
 				if (this.hp > this.maxHp) {
 					bonusHp = bonusHp - (this.hp - this.maxHp);
@@ -393,6 +393,7 @@
 				}
 				if (bonusHp)
 					this.text('+' + bonusHp + 'hp');
+					this.showHp();
 				else {
 					this.maxHp += 15;
 					this.hp = this.maxHp;
