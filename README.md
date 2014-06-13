@@ -18,7 +18,7 @@ Install dependences by `bower install` and run index.html on your webserver
 Install server packages:
 
 ```sh
-sd server
+cd server
 npm install
 ```
 
