@@ -391,10 +391,10 @@
 					bonusHp = bonusHp - (this.hp - this.maxHp);
 					this.hp = this.maxHp;
 				}
-				if (bonusHp)
+				if (bonusHp) {
 					this.text('+' + bonusHp + 'hp');
 					this.showHp();
-				else {
+				} else {
 					this.maxHp += 15;
 					this.hp = this.maxHp;
 					this.text('+' + 15 + 'mh');
