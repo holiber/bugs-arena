@@ -128,6 +128,7 @@
 		},
 
 		onStartGame: function () {
+			this.reset();
 			this.closeDialog();
 		},
 

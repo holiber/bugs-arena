@@ -47,10 +47,12 @@ var Client = function (id, socket) {
 	this.isReady = false;
 	this.isActive = true;
 	this.name = true;
+	this.isBot = socket ? false : true;
 }
 
 Client.prototype = {
 	send: function (msg, data) {
+		if (this.isBot) return;
 		var dataToSend = {msg: msg, data: data}
 		this.socket.emit('message', dataToSend);
 	}
@@ -60,7 +62,7 @@ var GameServer = function () {this.init.apply(this, arguments);}
 
 GameServer.prototype = {
 
-	init: function (name, port, map) {
+	init: function (name, port, map, bots) {
 		this.clients = {};
 		this.players = {
 			blue: null,
@@ -83,6 +85,7 @@ GameServer.prototype = {
 		this.name = this.name || name || DEFAULT_NAME;
 		this.serverMap = this.serverMap || map || DEFAULT_MAP;
 		this.map = null;
+		this.bots = this.bots || (bots ? bots.split(',') : null);
 	},
 
 	start: function () {
@@ -96,7 +99,27 @@ GameServer.prototype = {
 		this.randomizer = Math.round(Math.random() * 10000000);
 		this.loopIntervalId = setInterval(this.loop.bind(this), TICK_DELAY);
 		log('server ready');
+		this.addBots();
 		this.syncWithLobby();
+	},
+
+	addBots: function () {
+		if (!this.bots) return;
+		if (!this.bots.length > 3) {
+			throw 'to many bots';
+			return;
+		}
+		var availTeams = ['red', 'blue', 'green', 'purple'];
+		for (var i = 0; i < this.bots.length; i++) {
+			var idx = Math.floor(Math.random() * availTeams.length);
+			var team = availTeams[idx];
+			availTeams.splice(idx, 1);
+			var bot = this.createClient();
+			bot.name = this.bots[i];
+			bot.isReady = true;
+			this.players[team] = bot;
+			log('add bot "' + bot.name + '" to ' + team + ' team');
+		}
 	},
 
 	restart: function () {
@@ -172,18 +195,20 @@ GameServer.prototype = {
 		var playersCnt = 0;
 		var readyPlayersCnt = 0;
 		var activePlayersCnt = 0;
+		var realPlayersCnt = 0;
 		for (var key in this.players) {
 			var player = this.players[key];
 			if (!player) continue;
 			playersCnt++;
 			if (player && player.isReady) readyPlayersCnt++;
 			if (player.isActive) activePlayersCnt++;
+			if (!player.isBot && player.isConnected) realPlayersCnt++;
 		}
-		var allPlayersIsReady = playersCnt && (playersCnt == readyPlayersCnt);
+		var allPlayersIsReady = realPlayersCnt && (playersCnt == readyPlayersCnt);
 
 
 		if (this.gameIsRunning) {
-			if (activePlayersCnt < 2) {
+			if (activePlayersCnt < 2 || realPlayersCnt == 0) {
 				this.gameIsOver = true;
 				this.event('gameOver');
 			}
@@ -242,6 +267,15 @@ GameServer.prototype = {
 		})
 	},
 
+	createClient: function (socket) {
+		var id = ++this.lastId;
+		var client = new Client(id, socket);
+		this.clients[id] = client;
+		if (this.clientsCnt) this.age = 0;
+		this.clientsCnt++;
+		return client;
+	},
+
 	_onConnection: function (socket) {
 		var disconnectMsg = '';
 		if (this.clientsCnt == MAX_CLIENTS) disconnectMsg = 'server is full';
@@ -252,16 +286,12 @@ GameServer.prototype = {
 			return;
 		}
 
-		var id = ++this.lastId;
-		var client = new Client(id, socket);
-		this.clients[id] = client;
-		if (this.clientsCnt) this.age = 0;
-		this.clientsCnt++;
+		var client = this.createClient(socket);
 		socket.on('message', function (data) {
 			this._onMessage(client, data);
 		}.bind(this));
 		socket.on('disconnect', this._onDisconnect.bind(this, client));
-		log('new connection, id = ' + id);
+		log('new connection, id = ' + client.id);
 	},
 
 	_onMessage: function (client, data) {
@@ -373,5 +403,5 @@ GameServer.prototype = {
 }
 
 var argv = utils.parseArgv(process.argv);
-var server = new GameServer(argv.name, argv.port, argv.map);
+var server = new GameServer(argv.name, argv.port, argv.map, argv.bots);
 server.start();

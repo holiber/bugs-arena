@@ -122,11 +122,11 @@
 
 				var damages = {
 					acorn: this.unit.weapon.min * 3,
-					poison: Math.round(this.unit.weapon.max / 2)
+					poison: Math.round(this.unit.weapon.max)
 				}
 
 				var damage = damages[this.type];
-				obj.hp -= damage;
+				obj.damage(damage);
 				obj.text('-' + damage);
 
 				if (obj.hp <= 0) this.unit.onEnemyKill(obj);

@@ -67,6 +67,7 @@
 			this.level = 1;
 			this.highlightTime = 0;
 			this.poisonTime = 0;
+			this.showHpTime = 0;
 		},
 
 		birth: function () {
@@ -129,7 +130,11 @@
 		},
 
 		poison: function () {
-			this.poisonTime = 50;
+			this.poisonTime = 60;
+		},
+
+		showHp: function () {
+			this.showHpTime = 40;
 		},
 
 		step: function () {
@@ -200,6 +205,7 @@
 
 			this.highlightTime && this.highlightTime--;
 			this.poisonTime && this.poisonTime--;
+			this.showHpTime && this.showHpTime--;
 			this.age++;
 			this.render();
 		},
@@ -224,8 +230,7 @@
 			this.$rank.removeClass('health damage');
 			this.$rank.addClass(rank);
 
-
-			if (this.fight.enemy) {
+			if (this.fight.enemy || this.showHpTime) {
 				var live = this.hp / this.maxHp;
 				var hpColor = 'green';
 				if (live < 0.6) hpColor = 'orange';
@@ -290,7 +295,7 @@
 				if (this.fight.frame == middleFrame) {
 					var power = Math.round(this.game.random() * (this.weapon.max - this.weapon.min) + this.weapon.min);
 					if (enemy.hp <= 0) return;
-					enemy.hp-= power;
+					enemy.damage(power);
 					//prepare blood
 					var bloodVec = new Vec(1, 0);
 					var angle = this.angle;
@@ -331,6 +336,11 @@
 				);
 				this.player.stats.kills++;
 			}
+		},
+
+		damage: function (power) {
+			this.hp-= power;
+			this.showHp();
 		},
 
 		text: function (text) {
