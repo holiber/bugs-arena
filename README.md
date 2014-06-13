@@ -31,5 +31,5 @@ node server.js
 Run server with custom settings:
 
 ```sh
-node server.js name="My bugsarena server" port="8099" map="FourSectors"
+node server.js name="My bugsarena server" port="8099" map="FourSectors" bots="Jerry,Perry,Marry"
 ```
