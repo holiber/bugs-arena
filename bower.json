@@ -23,6 +23,6 @@
   "dependencies": {
     "jquery.cookie": "~1.4.0",
     "qstore": "~0.7.9",
-    "socket.io-client": "~0.9.16"
+    "socket.io-client": "~1.3.5"
   }
 }

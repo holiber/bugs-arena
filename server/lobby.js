@@ -44,9 +44,8 @@ LobbyServer.prototype = {
 	},
 
 	checkHost: function (candidate) {
-		log('check host ', candidate);
-		var socket = io.connect('http://' + candidate.ip + ':' + candidate.port, {'force new connection': true});
-
+		console.log('check', candidate.ip);
+		var socket = io('http://' + candidate.ip + ':' + candidate.port, {'force new connection': true});
 		socket.on('connect', function () {
 			socket.disconnect();
 			candidate.lastSync = new Date();
@@ -56,8 +55,9 @@ LobbyServer.prototype = {
 			log('total active hosts: ', this.hosts.rows.length);
 		}.bind(this));
 
-		socket.on('error', function () {
-			log('could not check ' + candidate.id);
+		socket.on('connect_error', function (e) {
+			log('could not check ' + candidate.ip);
+			log(e);
 		}.bind(this));
 	},
 
@@ -71,10 +71,14 @@ LobbyServer.prototype = {
 
 	_onCandidate: function (req, res) {
 		var p = req.body;
-
+		console.log('connection from', req.ip);
+		var ip = req.ip;
+                if (ip.substr(0, 6) == '::ffff') { // ipv4 as ipv6
+                        ip = ip.substring(7, ip.length);
+                }
 		var candidate = {
-			id: req.ip + ':' + entities.encode(p.port),
-			ip: req.ip,
+			id: ip + ':' + entities.encode(p.port),
+			ip: ip,
 			port: entities.encode(p.port),
 			name: entities.encode(p.name),
 			protocol: entities.encode(p.protocol),
