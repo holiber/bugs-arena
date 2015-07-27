@@ -44,8 +44,9 @@ LobbyServer.prototype = {
 	},
 
 	checkHost: function (candidate) {
-		console.log('check', candidate.ip);
-		var socket = io('http://' + candidate.ip + ':' + candidate.port, {'force new connection': true});
+		var address = 'http://' + candidate.ip + ':' + candidate.port;
+		console.log('check', address);
+		var socket = io(address, {'force new connection': true});
 		socket.on('connect', function () {
 			socket.disconnect();
 			candidate.lastSync = new Date();
