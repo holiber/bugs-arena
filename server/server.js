@@ -37,7 +37,7 @@ var utils = {
 		}
 		return result;
 	}
-}
+};
 
 var Client = function (id, socket) {
 	this.id = id;
@@ -56,7 +56,7 @@ Client.prototype = {
 		var dataToSend = {msg: msg, data: data}
 		this.socket.emit('message', dataToSend);
 	}
-}
+};
 
 var GameServer = function () {this.init.apply(this, arguments);}
 
@@ -69,7 +69,7 @@ GameServer.prototype = {
 			red: null,
 			green: null,
 			purple: null
-		}
+		};
 		this.lastId = 0;
 		this.age = 0;
 		this.lastAge = 0;
@@ -400,7 +400,7 @@ GameServer.prototype = {
 	_onDisconnect: function (client) {
 		this.disconnectClient(client.id);
 	}
-}
+};
 
 var argv = utils.parseArgv(process.argv);
 var server = new GameServer(argv.name, argv.port, argv.map, argv.bots);

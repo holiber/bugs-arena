@@ -1,4 +1,5 @@
 var io = require('socket.io-client');
+var heapdump = require('heapdump');
 var Qstore = require('qstore');
 var express = require('express');
 var bodyParser = require('body-parser');
@@ -46,7 +47,7 @@ LobbyServer.prototype = {
 	checkHost: function (candidate) {
 		var address = 'http://' + candidate.ip + ':' + candidate.port;
 		console.log('check', address);
-		var socket = io(address, {'force new connection': true});
+		var socket = io(address, {'forceNew': true, reconnection: false});
 		socket.on('connect', function () {
 			socket.disconnect();
 			candidate.lastSync = new Date();
@@ -106,3 +107,9 @@ LobbyServer.prototype = {
 
 var lobbyServer = new LobbyServer(PORT);
 lobbyServer.start();
+
+
+heapdump.writeSnapshot();
+setInterval(function () {
+	heapdump.writeSnapshot();
+}, 1000 * 60 * 60);
