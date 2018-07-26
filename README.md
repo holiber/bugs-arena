@@ -1,19 +1,19 @@
-#Bugs arena
+# Bugs arena
 Multiplayer game on JavaScript, HTML and CSS3
 ![preview](https://raw.githubusercontent.com/holiber/bugs-arena/master/docs/preview.png)
 
 [WATCH VIDEO](http://www.youtube.com/watch?v=AHYeoVX5d9c)   
 [PLAY ONLINE](http://bugsarena.alexclimber.com)
 
-##Game overview
+## Game overview
 Grow your colony of beetles and destroy the enemy bugs.  
 Collect useful bonuses for excellence:  
 ![bonuses](https://raw.githubusercontent.com/holiber/bugs-arena/master/docs/bonuses.png)
 
-##Start client
+## Start client
 Install dependences by `bower install` and run index.html on your webserver
 
-##Start server
+## Start server
 
 Install server packages:
 
