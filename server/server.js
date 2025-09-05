@@ -4,7 +4,9 @@ var axios = require('axios');
 var DEFAULT_PORT = 8089;
 var DEFAULT_NAME = 'bugs arena server';
 var DEFAULT_MAP = 'random';
-var LOBBY_SERVER = 'localhost:8095';
+
+// in dev mode lobby
+var LOBBY_SERVER = process.env.NODE_ENV = 'production' ? 'https://bugs-arena-lobby.onrender.com' : 'localhost:8095';
 var PROTOCOL_VERSION = 1;
 var MAX_CLIENTS = 4;
 var TICK_DELAY = 25; //ms

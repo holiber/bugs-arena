@@ -1,6 +1,8 @@
 !function () {
 
-	var LOBBY_SERVER = 'http://localhost:8095';
+	var LOBBY_SERVER = window.location.hostname === 'localhost' ?
+	 'http://localhost:8095' :
+	 'https://bugs-arena-lobby.onrender.com';
 	var MAX_MESSAGES = 6;
 
 	var Panel = Game.Panel = Class.extend({
