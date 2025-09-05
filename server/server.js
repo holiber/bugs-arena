@@ -6,7 +6,7 @@ var DEFAULT_NAME = 'bugs arena server';
 var DEFAULT_MAP = 'random';
 
 // in dev mode lobby
-var LOBBY_SERVER = process.env.NODE_ENV = 'dev' ? 'https://bugs-arena-lobby.onrender.com' : 'http://localhost:8095';
+var LOBBY_SERVER = process.env.NODE_ENV === 'dev' ? 'https://bugs-arena-lobby.onrender.com' : 'http://localhost:8095';
 var PROTOCOL_VERSION = 1;
 var MAX_CLIENTS = 4;
 var TICK_DELAY = 25; //ms

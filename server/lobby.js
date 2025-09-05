@@ -73,7 +73,7 @@ LobbyServer.prototype = {
 
 	_onCandidate: function (req, res) {
 		var p = req.body;
-		console.log('connection from', res.ip);
+		console.log('connection from', req);
 		var ip = res.ip;
                 if (ip.substr(0, 6) == '::ffff') { // ipv4 as ipv6
                         ip = ip.substring(7, ip.length);
