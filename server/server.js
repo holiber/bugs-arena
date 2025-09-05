@@ -257,7 +257,7 @@ GameServer.prototype = {
 		axios.post(LOBBY_SERVER, {
 			name: this.name,
 			port: this.port,
-			host: 
+			// host: '',
 			protocol: PROTOCOL_VERSION,
 			playersCnt: this.clientsCnt,
 			map: this.map
