@@ -253,7 +253,7 @@ GameServer.prototype = {
 	},
 
 	syncWithLobby: function () {
-		log('sync with lobby server..');
+		log(`sync with lobby server ${LOBBY_SERVER} ..`);
 		axios.post('http://' + LOBBY_SERVER, {
 			name: this.name,
 			port: this.port,

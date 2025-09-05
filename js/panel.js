@@ -31,6 +31,7 @@
 			$dlg.find('.load-state').hide();
 			$dlg.find('.loading').show();
 			var $tbody = $dlg.find('tbody').empty();
+			console.log('Connect to lobby server', LOBBY_SERVER);
 			var req = $.getJSON(LOBBY_SERVER + '?callback=?');
 			var onFail = function () {
 				$dlg.find('.load-state').hide();
