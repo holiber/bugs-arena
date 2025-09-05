@@ -74,14 +74,15 @@ LobbyServer.prototype = {
 	_onCandidate: function (req, res) {
 		var p = req.body;
 		console.log('connection from', req);
-		var ip = res.ip;
-                if (ip.substr(0, 6) == '::ffff') { // ipv4 as ipv6
-                        ip = ip.substring(7, ip.length);
-                }
+		var ip = req.ip;
+                // if (ip.substr(0, 6) == '::ffff') { // ipv4 as ipv6
+                //         ip = ip.substring(7, ip.length);
+                // }
 		var candidate = {
 			id: ip + ':' + p.port,
 			ip: ip,
 			port: p.port,
+			host: p.host,
 			name: entities.encode(p.name),
 			protocol: entities.encode(p.protocol),
 			playersCnt: Number(p.playersCnt),
