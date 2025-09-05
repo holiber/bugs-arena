@@ -1,0 +1,33 @@
+services:
+  - type: web
+    name: lobby-server
+    env: node
+    plan: starter
+    buildCommand: npm ci
+    startCommand: npm run prod:lobby
+    healthCheckPath: /health
+    # пример проброса переменных
+    envVars:
+      - key: NODE_ENV
+        value: production
+
+  - type: web
+    name: server1
+    env: node
+    plan: starter
+    buildCommand: npm ci
+    startCommand: npm run prod:server1
+    healthCheckPath: /health
+
+  - type: web
+    name: web-static
+    env: static
+    buildCommand: npm ci
+    # staticPublishPath: dist
+    # пример: фронту нужен URL бэкенда
+    envVars:
+      - key: LOBBY_HOST
+        fromService:
+          type: web
+          name: lobby-server
+          property: host
