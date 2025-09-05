@@ -79,9 +79,9 @@ LobbyServer.prototype = {
                         ip = ip.substring(7, ip.length);
                 }
 		var candidate = {
-			id: ip + ':' + entities.encode(p.port),
+			id: ip + ':' + p.port,
 			ip: ip,
-			port: entities.encode(p.port),
+			port: p.port,
 			name: entities.encode(p.name),
 			protocol: entities.encode(p.protocol),
 			playersCnt: Number(p.playersCnt),

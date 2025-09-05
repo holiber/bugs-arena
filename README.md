@@ -10,18 +10,32 @@ Grow your colony of beetles and destroy the enemy bugs.
 Collect useful bonuses for excellence:  
 ![bonuses](https://raw.githubusercontent.com/holiber/bugs-arena/master/docs/bonuses.png)
 
-## Start client
-Install dependences by `bower install` and run index.html on your webserver
+## Quick launch
+Install client dependencies
 
-## Start server
+```sh
+npm install
+```
 
-Install server packages:
+Install server dependencies:
 
 ```sh
 cd server
 npm install
 ```
 
+Run the game
+```sh
+    npm run dev
+```
+
+That starts:
+ - game server with an game room
+ - lobby server to track all existing game servers
+ - http client
+
+
+# Server configuration
 Run server with default settings:
 
 ```sh

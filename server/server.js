@@ -1,10 +1,10 @@
 var io = require('socket.io');
-var request = require('request');
+var axios = require('axios');
 
 var DEFAULT_PORT = 8089;
 var DEFAULT_NAME = 'bugs arena server';
 var DEFAULT_MAP = 'random';
-var LOBBY_SERVER = 'bugsarena.alexclimber.com:8095';//localhost:8095
+var LOBBY_SERVER = 'localhost:8095';
 var PROTOCOL_VERSION = 1;
 var MAX_CLIENTS = 4;
 var TICK_DELAY = 25; //ms
@@ -252,19 +252,18 @@ GameServer.prototype = {
 
 	syncWithLobby: function () {
 		log('sync with lobby server..');
-		request.post('http://' + LOBBY_SERVER, {form: {
+		axios.post('http://' + LOBBY_SERVER, {
 			name: this.name,
 			port: this.port,
 			protocol: PROTOCOL_VERSION,
 			playersCnt: this.clientsCnt,
 			map: this.map
-		}}, function (error, response, body) {
-			if (error) {
-				log('warning! sync with lobby server failed');
-				return;
-			}
-			log('lobby server response:', body);
+		}).then( (response) => {
+			// log('lobby server response:', response);
 		})
+		.catch( (error) => {
+			log('lobby server error:', error.message);
+		});
 	},
 
 	createClient: function (socket) {
