@@ -45,7 +45,7 @@ LobbyServer.prototype = {
 	},
 
 	checkHost: function (candidate) {
-		var address = 'http://' + candidate.ip + ':' + candidate.port;
+		var address = `${protocol}://` + candidate.ip + ':' + candidate.port;
 		console.log('check', address);
 		var socket = io(address, {'forceNew': true, reconnection: false});
 		socket.on('connect', function () {
