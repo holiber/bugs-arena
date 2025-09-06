@@ -38,10 +38,10 @@
 			var $tbody = $dlg.find('tbody').empty();
 			
 			var servers = await Promise.all(KNOWN_SERVERS.map(this.fetchServerInfo.bind(this)));
-			servers = servers.filter(s => s);
+			servers = servers.filter(s => s && !s.gameIsRuning);
 			
 			servers.forEach(function (server) {
-				$tbody.append('<tr rel="' + server.host + '"><td>' + server.host + '</td><td>' + server.host + '</td><td>' + server.playersCnt + '</td><td>' + server.map + '</td><td>' + /*server.protocol*/ + '</td></tr>');
+				$tbody.append('<tr rel="' + server.host + '"><td>' + server.host + '</td><td>' + server.host + '</td><td>' + server.playersCnt + '</td><td>' + server.map + '</td><td>' + /*server.protocol +*/  '</td></tr>');
 			});
 
 			$dlg.find('.load-state').hide();
