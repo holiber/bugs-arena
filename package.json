@@ -40,7 +40,7 @@
     "dev:server": "node server/server.js name=\"My bugsarena server 2\" port=8100 bots=\"Perry,Marry\"",
     "dev:client": "http-server",
     "prod:server1": "node server/server.js name=\"My bugsarena server 1\" port=8099 bots=\"Jerry,Perry,Marry\"",
-    "prod:server2": "node server/server.js name=\"My bugsarena server 2\" map=\"FourSectors\" port=8100 bots=\"Perry,Marry\"",
+    "prod:server2": "node server/server.js name=\"My bugsarena server 2\" map=\"FourSectors\" port=8100",
     "dev": "npm-run-all --parallel dev:*",
     "start": "npm-run-all --parallel prod:*"
   },
