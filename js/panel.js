@@ -1,9 +1,14 @@
 !function () {
 
-	var LOBBY_SERVER = window.location.hostname === 'localhost' ?
-	 'http://localhost:8095' :
-	 'https://bugs-arena-lobby.onrender.com';
 	var MAX_MESSAGES = 6;
+
+	// hardcode some known server hosts
+	// ideally there should be a lobby sevice to track all created servers
+	var KNOWN_SERVERS = [
+		'http://localhost:8089',
+		'http://localhost:8090',
+		'https://bugs-arena-server.onrender.com/'
+	]
 
 	var Panel = Game.Panel = Class.extend({
 
@@ -15,7 +20,6 @@
 			this.$el = this.game.$el.find('.panel')
 			this.$playersList = this.$el.find('.players .list');
 			this.$messages = this.$el.find('.messages .list');
-			this.servers = new Qstore();
 			this._attachEvents();
 			this.closeDialog();
 			this.render();
@@ -26,33 +30,21 @@
 			this.$playersList.empty();
 		},
 
-		getServers: function () {
+		getServers: async function () {
 			var $dlg = this.$el.find('.dlg.games');
 			$dlg.find('.load-state').hide();
 			$dlg.find('.loading').show();
 			var $tbody = $dlg.find('tbody').empty();
-			console.log('Connect to lobby server', LOBBY_SERVER);
-			var req = $.getJSON(LOBBY_SERVER + '?callback=?');
-			var onFail = function () {
-				$dlg.find('.load-state').hide();
-				$dlg.find('.error').show();
-			}
-
-			req.done(function (servers) {
-				this.servers = new Qstore(servers);
-
-				if (!this.servers.rows.length) {
-					onFail();
-					return;
-				}
-
-				this.servers.each(function (server) {
-					$tbody.append('<tr rel="' + server.id + '"><td>' + server.name + '</td><td>' + server.id + '</td><td>' + server.playersCnt + '</td><td>' + server.map + '</td><td>' + server.protocol + '</td></tr>');
-				});
-				$dlg.find('.load-state').hide();
-				$dlg.find('.done').show();
+			
+			var servers = await Promise.all(KNOWN_SERVERS.map(this.fetchServerInfo.bind(this)));
+			servers = servers.filter(s => s);
+			
+			servers.forEach(function (server) {
+				$tbody.append('<tr rel="' + server.host + '"><td>' + server.host + '</td><td>' + server.host + '</td><td>' + server.playersCnt + '</td><td>' + server.map + '</td><td>' + server.protocol + '</td></tr>');
 			});
-			req.fail(onFail)
+
+			$dlg.find('.load-state').hide();
+			$dlg.find('.done').show();
 		},
 
 		render: function () {
@@ -197,6 +189,21 @@
 			this.lastAddress = address;
 			this.lastName = name;
 			this.game.connect(address, name);
+		},
+
+		fetchServerInfo: function (host) {
+
+			console.log('check server', host);
+			return new Promise(async r => {
+				try {
+					const res = await axios.get(host, {timeout: 5000});
+					res.data.host = host;
+					r(res.data);
+				} catch (e) {
+					// console.error(e);
+					r(null);
+				}
+			});
 		},
 
 		_onDisconnectClick: function () {

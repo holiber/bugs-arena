@@ -1,18 +1,19 @@
 var io = require('socket.io');
 var axios = require('axios');
+var express = require('express');
+var cors = require('cors');
+const { protocol } = require('socket.io-client');
 
 var DEFAULT_PORT = 8089;
 var DEFAULT_NAME = 'bugs arena server';
 var DEFAULT_MAP = 'random';
+var DEFAULT_HOST = `http://localhost:${DEFAULT_PORT}`;
 
-// in dev mode lobby
-var LOBBY_SERVER = process.env.NODE_ENV !== 'dev' ? 'https://bugs-arena-lobby.onrender.com' : 'http://localhost:8095';
 var PROTOCOL_VERSION = 1;
 var MAX_CLIENTS = 4;
 var TICK_DELAY = 25; //ms
 var SEND_DELAY = 5; //frames
 var START_GAME_DELAY = 50; //frames
-var LOBBY_SYNC_DELAY = 200; //frames
 var MAPS = ['FourSectors', 'Dogfight', 'Zombie'];
 var Entities = require('html-entities').AllHtmlEntities;
 var entities = new Entities();
@@ -64,7 +65,7 @@ var GameServer = function () {this.init.apply(this, arguments);}
 
 GameServer.prototype = {
 
-	init: function (name, port, map, bots) {
+	init: function (name, map, bots, port) {
 		this.clients = {};
 		this.players = {
 			blue: null,
@@ -86,15 +87,39 @@ GameServer.prototype = {
 		this.port = Number(this.port || port || DEFAULT_PORT);
 		this.name = this.name || name || DEFAULT_NAME;
 		this.serverMap = this.serverMap || map || DEFAULT_MAP;
+		this.host == this.host || DEFAULT_HOST;
 		this.map = null;
 		this.bots = this.bots || (bots ? bots.split(',') : null);
 	},
 
 	start: function () {
+
+		
 		if (!this.io) {
-			this.io = io.listen(this.port);
-			this.io.sockets.on('connection', this._onConnection.bind(this));
-			log('server started on port ' + this.port);
+
+			var http = require('http');
+			var app = express();
+
+			app.use(cors({origin: '*'}));
+			app.options('*', cors());  
+			
+			// status endpoint
+			app.get('/', (req, res) => {
+			  res.send({
+				gameIsRunning: this.gameIsRunning,
+				playersCnt: Object.keys(this.clients || {}).length,
+				map: this.map,
+				protocol: this.protocol
+			  });
+			});
+			
+			var server = http.createServer(app);
+			
+			this.io = require('socket.io')(server);
+
+			server.listen(this.port, () => log('server started on port ' + this.port));
+			// обработка подключений
+			this.io.on('connection', this._onConnection.bind(this));
 		}
 		this.map = this.serverMap;
 		if (this.map == 'random') this.map = utils.getRandomElement(MAPS);
@@ -102,7 +127,6 @@ GameServer.prototype = {
 		this.loopIntervalId = setInterval(this.loop.bind(this), TICK_DELAY);
 		log('server ready');
 		this.addBots();
-		this.syncWithLobby();
 	},
 
 	addBots: function () {
@@ -141,10 +165,6 @@ GameServer.prototype = {
 		this.age++;
 		if (clientsCnt && this.age && !(this.age % SEND_DELAY)) {
 			this.sendState();
-		}
-
-		if (!this.gameIsRunning && !(this.age % LOBBY_SYNC_DELAY)) {
-			this.syncWithLobby();
 		}
 	},
 
@@ -250,23 +270,6 @@ GameServer.prototype = {
 		this.event('playerDisconnected', client.id);
 		log('client ' + client.id + ' disconnected');
 		if (!this.clientsCnt && this.gameIsRunning) this.gameOver();
-	},
-
-	syncWithLobby: function () {
-		log(`sync with lobby server ${LOBBY_SERVER} ..`);
-		axios.post(LOBBY_SERVER, {
-			name: this.name,
-			port: this.port,
-			// host: '',
-			protocol: PROTOCOL_VERSION,
-			playersCnt: this.clientsCnt,
-			map: this.map
-		}).then( (response) => {
-			// log('lobby server response:', response);
-		})
-		.catch( (error) => {
-			log('lobby server error:', error.message);
-		});
 	},
 
 	createClient: function (socket) {
@@ -384,7 +387,7 @@ GameServer.prototype = {
 			players: players,
 			age: this.age,
 			randomizer: this.randomizer,
-			map: this.map
+			map: this.map,
 		});
 
 		for (var clientId in this.clients) {
@@ -405,5 +408,5 @@ GameServer.prototype = {
 };
 
 var argv = utils.parseArgv(process.argv);
-var server = new GameServer(argv.name, argv.port, argv.map, argv.bots);
+var server = new GameServer(argv.name, argv.map, argv.bots, argv.port);
 server.start();

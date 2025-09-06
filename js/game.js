@@ -132,7 +132,6 @@
 		},
 
 		connect: function (address, name) {
-			address = 'http://' + address;
 			this.socket = io.connect(address, {'force new connection': true, timeout: 1000});
 			this.socket.on('connect', function () {
 				console.log('connected');
