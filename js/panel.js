@@ -7,7 +7,7 @@
 	var KNOWN_SERVERS = [
 		'http://localhost:8089',
 		'http://localhost:8090',
-		'https://bugs-arena-server.onrender.com/'
+		'https://bugs-arena-server.onrender.com'
 	]
 
 	var Panel = Game.Panel = Class.extend({
